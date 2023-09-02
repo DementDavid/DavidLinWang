@@ -67,6 +67,8 @@
 		}
 		body{
 		background-color:#ddf6ff;
+		display:flex;
+		flex-direction:column;
 		}
 		h2{
 		text-align:center;
