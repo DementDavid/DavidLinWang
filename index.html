@@ -13,23 +13,34 @@
 	</head>
 	<title>David Lin Wang</title>
 	<style>
-		main{
-		font-family:roboto;
-		background-color:white;
-		margin:100px;
-		margin-right:700px;
-		border-radius:10px;
+		
+       .container{
+		min-height:200vh;
+		overflow:hidden;
+		display:flex;
+		margin-top:3vw;
+		margin-bottom:3vw;
 		}
-        .sidebar {
-		width: 25%;
-		background-color: #ccfff5;
-		margin 20px;
-		position: absolute;
+		.container::after {
+		content: "";
+		clear: both;
+		display: table;
+		}
+		.za{
+		background-color:white;
+		border-radius:3vw;
+		font-size:50px;
+		width:70%;
+		padding:5vw;
+		overflow:hidden;
+		margin-right:3vw;
+		}
+		.sidebar{
+		width: 30%;
+		float: left;
+		position: relative;
 		top: 0;
-		right: 0;
-		padding-top:30px;
-		transform: translate(-20%, 70%);
-		border-radius:20px;
+		flex: 1; /* Utilisez la propriété flex pour que la barre latérale ait la même hauteur que .za */
 		}
 		.topnav a.active{
 		background-color:white;
@@ -37,33 +48,20 @@
 		.sidebar-header {
 		height: 50px; 
 		background-color:#00ffcc;
-		position: absolute;
-		top: 0;
 		width:100%;
 		}
 		.article-list:empty + .sidebar {
 		display: none;
 		}
-
-		.sidebar::before {
-		content: '';
-		display: block;
-		padding-bottom: 100%; 
-		}
-		
 		.news{
 		padding: 10px;
 		background-color:white;
-		position:absolute;
 		bottom: 0;
-		transform:translate(290%, 90%);
 		border:solid, 1px, teal;
 		border-radius:20px;
 		text-align:center;
 		font-size:30px;
-		
 		}
-
 	</style>
 	<script src="footer.js"></script>
 	<header>
@@ -73,45 +71,46 @@
 			<a class="active" href="Artist blog 1.html">Home</a>
 			<a href="Illustrations.html">Illustrations</a>
 			<a href="blog.html">Blog</a>
-			<a href="#Webcomic">Webcomic</a>
-			<a href="#About">About</a>
+			<a href="Webcomic.html">Webcomic</a>
+			<a href="About.html">About</a>
 		</nav>
 		<!--Principal text of the home page-->
 		
 	</header>
 		<body>
-		<div class="content">
-			<h2>WELCOME TO MY PAGE</h2>
-			<p style="color:#002e4d; width:50%; font-size:60px;">LAST ARTWORKS</p>
-		</div>
-		<main>
-			<div class="box grid-container">
-				<div class="grid-item canvas">
-					<img src="Beacon in flames.png" width="2000px" alt="image1.png">
+		<div class="container">
+			<div class="za">
+			<article>LAST ARTWORKS</article>
+			<div class="grid-container">
+				<div class="grid-item">
+					<img src="Beacon in flames.png" alt="image1.png">
 				</div>
 				<div class="grid-item">
-					<img src="Shui he Tian.png" width="2000px" alt="image1.png">
+					<img src="Shui he Tian.png" alt="image1.png">
 				</div>
 				<div class="grid-item">
-					<img src="Shui he Tian.png" width="2000px" alt="image1.png">
+					<img src="Shui he Tian.png" alt="image1.png">
 				</div>
 				<div class="grid-item">
-					<img src="Shui he Tian.png" width="2000px" alt="image1.png">
+					<img src="Shui he Tian.png" alt="image1.png">
+				</div>
 			</div>
-			<aside class="sidebar">
-				<div class="sidebar-header">
+		</div>
+			<div class="sidebar">
+			<div class="sidebar-header">
 					<h3 style="z-index:1">Last posts</h2>
 				</div>
 				<div class="recent-articles">
 				</div>
 				<div class="recent-article">
 				</div>
-			</aside>
-			<ul class="lastArticles" id="listeArticles"></ul>
-			<div class="news">
-			<p>Featured<p>
-			<img src="Aquapura.png" width="400px" height="400px">
+				<ul class="lastArticles" id="listeArticles"></ul>
+				<div class="news">
+				<p>Featured<p>
+				<img src="Aquapura.png" width="400px" height="400px">
+				</div>
 			</div>
+		</div>
 		</main>
 			<script src="lastposts.php"></script>
 			<footer>
