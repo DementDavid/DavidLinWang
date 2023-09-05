@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+	<meta name="author" content="David Lin Wang">
+	<meta name="keywoords" content=".">
+	<link rel="stylesheet" href="artist1.css">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="icon" type="image/png" href="Shui he Tian.png">	
+	</head>
+	<title>David Lin Wang</title>
+	<style>
+		main{
+		font-size:30px;
+		font-family:roboto;
+		overflow:hidden;
+		margin-bottom: 20px;
+		width:75%;
+		margin-top: -20px; 
+		}	
+		.content {
+		flex: 1; 
+		}
+		
+        .sidebar {
+		width: 25%;
+		background-color: #ccfff5;
+		margin 20px;
+		position: absolute;
+		top: 0;
+		right: 0;
+		padding-top:30px;
+		transform: translate(0%, 70%);
+		}
+		.topnav a.active{
+		background-color:white;
+		}
+		.sidebar-header {
+		height: 50px; 
+		background-color:#00ffcc;
+		margin-bottom: 30px;
+		position: absolute;
+		top: 0;
+		width:100%;
+		}
+		.article-list:empty + .sidebar {
+		display: none;
+		}
+
+		.sidebar::before {
+		content: '';
+		display: block;
+		padding-bottom: 100%; 
+		}
+		.recent-articles {
+		margin-top: 50px; 
+		position:absolute;
+        top: 0;
+		width:100%;
+		border: solid black 1px;
+		border-radius:5px;
+		overflow: hidden;
+		display: flex;
+		flex-direction: column;
+		text-decoration:none;
+		padding:20px;
+		background-color:white;
+		}
+		.recent-article {
+		background-color: white;
+		text-decoration:none;
+		color: white;
+		padding: 5px;
+		text-align: center;
+		top:0;
+		}
+		.recent-articles:li{
+		border: solid black 1px;
+		text-decoration:none;
+		}
+		#gallery;
+		position:absolute;
+		bottom:0;
+		transform:translate(25%, 0%);
+		
+		}
+
+	</style>
+	<header>
+		<h1 class="presentation">DAVID LIN WANG</h1>
+		<!--Top banner-->
+		<nav class="topnav content">
+			<a href="Artist blog 1.html">Home</a>
+			<a class="active" href="Illustrations.html">Illustrations</a>
+			<a href="blog.html">Blog</a>
+			<a href="Webcomic.html">Webcomic</a>
+			<a href="About.html">About</a>
+		</nav>
+		<nav class="second content">
+			<a  href="Illustrations.html">Artworks</a>
+			<a  href="Sketchbook.html">Sketchbook</a>
+			<a 	class="current" href="Made up.html">Made up</a>
+		</nav>
+		<h2>Made Up</h2>
+	</header>
+	<body>
+		<article>
+			<div id="gallery" style="min-height:1800px;">
+				<div class="box grid-container">
+					<div class="grid-item">
+				</div>
+			</div>
+		</article>
+		<div class="pagechange">
+			<button class="prevButton">Previus page</button>
+			<button class="nextButton">Next page</button>
+			<span>Actual page: <span id="currentPage"></span></span>
+		</div>
+		<footer>
+			<p>David Lin Wang &copy All the right reserved</p>
+			<article>The illustrations are protected by Creative Commons(CC) for more info, visit the page:</article>
+		</footer>
+		<script src="footer.js"></script>
+		<script src="Gallery.js"></script>
+	</body>
+</html>
