@@ -1,4 +1,4 @@
-		*{
+	*{
 		text-decoration:none;
 		color:#002e4d;
 		font-style:italic;
@@ -17,9 +17,9 @@
 		}
 		.second {
 		background-color:#006680;
-		font-size:20px;
+		font-size:1.5vw;
 		width:100%;
-		color:white;
+		color:black;
 		text-align:center;
 		text-decoration:none;
 		display:flex;
@@ -34,10 +34,9 @@
 		}
 		.second a:hover{
 		background-color:white;
-		border-radius:30px;
 		}
-		.seconde a:active{
-		color:white;
+		.second .current{
+		background-color:white;
 		}
 		.topnav a{
 		padding: 30px 80px; 
@@ -97,11 +96,12 @@
 		color:#002e4d;
 		}
 		footer {
-        	flex-shrink: 0;
+         flex-shrink: 0;
 		background-color: #b3f0ff;
 		font-size: 30px;
 		text-align: center;
 		padding: 20px;
+		line-height:0.5rem;
 		}
 		body.show-footer footer {
 		display: block;
@@ -122,14 +122,14 @@
 		max-width: 100%; 
 		max-height: 100%;	
 		transition: transform 0.3s ease; 
-       		 }
+        }
 		.grid-item img:hover {
 		transform: scale(1.2); 
 		}
 		.contents {
-        	flex: 1;
+        flex: 1;
 		min-height:120vw;
-        	}
+        }
 		.canvas{
 		justify-content:center;
 		align-items:center;
@@ -137,7 +137,8 @@
 		height: 50vh;
 		}
 		.recent-articles {
-		position:relative;
+		margin-top: 50px; 
+		position:absolute;
 		top: 0;
 		width:100%;
 		border: solid black 1px;
@@ -164,26 +165,26 @@
 		text-align: center;
 		top:0;
 		border:solid black 1px;
-		height:3vw;
+		height:12vw;
 		}
 		.recent-article:li{
 		border: solid black 1px;
 		text-decoration:none;
 		}
-        #listeArticles {
-        list-style: none;
-        padding: 0;
+      		#listeArticles {
+        	list-style: none;
+       		 padding: 0;
 		z-index:1;
 		float:right;
 		position:absolute;
 		overflow-y: auto;
 		text-decoration:none;
-        }
+        	}
 
-        #listeArticles li {
+       		 #listeArticles li {
 		position:absolute;
 		top: 0;
-        margin-bottom: 10px;
+        	margin-bottom: 10px;
 		display:block;
 		border:solid:1px;
 		background-color:white;
@@ -191,7 +192,7 @@
 		display: flex;
 		align-items: center;
 		text-decoration:none;
-        }
+        	}
 		.pagechange {
 		align-items:center;
 		text-align:center;
@@ -200,8 +201,8 @@
 		.pagechange a{
 		font-size:60px;
 		}
-	@media (max-width: 768px) {
-  .container {
-    width: 100%; 
-    margin: 0; 
-  }
+		@media (max-width: 768px) {
+		.container {
+		width: 100%; 
+		margin: 0; 
+		  }
