@@ -3,6 +3,6 @@ document.addEventListener('DOMContentLoaded', function () {
   const topnav = document.querySelector('.topnav');
 
   mobileMenuButton.addEventListener('click', function () {
-    topnav.classList.toggle('open'); // Ajoute ou supprime la classe "open" pour afficher ou masquer le menu
+    topnav.classList.toggle('open');
   });
 });
