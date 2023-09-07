@@ -198,13 +198,13 @@
 		.pagechange a{
 		font-size:60px;
 		}
-		.mobile-menu-button {
+		#mobile-menu-button {
  		 display: block;
 		  cursor: pointer;
 		  padding: 10px;
 		}
 
-		.mobile-menu-button span {
+		#mobile-menu-button span {
  		 display: block;
 		 height: 3px;
 		  width: 30px;
@@ -213,15 +213,15 @@
 		  transition: transform 0.3s ease;
 		}
 
-		.mobile-menu-button.open span:nth-child(1) {
+		#mobile-menu-button.open span:nth-child(1) {
 		  transform: translateY(8px) rotate(45deg);
 		}
 
-		.mobile-menu-button.open span:nth-child(2) {
+		#mobile-menu-button.open span:nth-child(2) {
 		  opacity: 0;
 		}
 
-		.mobile-menu-button.open span:nth-child(3) {
+		#mobile-menu-button.open span:nth-child(3) {
 		  transform: translateY(-8px) rotate(-45deg);
 		}
 		@media (max-width: 768px) {
