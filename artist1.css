@@ -198,18 +198,6 @@
 		.pagechange a{
 		font-size:60px;
 		}
-		@media (max-width: 768px) {
-		.container {
-		width: 100%; 
-		margin: 0; 
-		  }
-		 .za {
-		font-size: 30px;
-		  }
-		.sidebar {
-		width: 20%;
-		} 
-		}
 		.mobile-menu-button {
  		 display: block;
 		  cursor: pointer;
@@ -236,3 +224,16 @@
 		.mobile-menu-button.open span:nth-child(3) {
 		  transform: translateY(-8px) rotate(-45deg);
 		}
+		@media (max-width: 768px) {
+		.container {
+		width: 100%; 
+		margin: 0; 
+		  }
+		 .za {
+		font-size: 30px;
+		  }
+		.sidebar {
+		width: 20%;
+		} 
+		}
+		
