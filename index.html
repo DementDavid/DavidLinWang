@@ -3,7 +3,7 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width ,  initial-scale=1, user-scalable=yes">
+		<meta name="viewport" content="width=device-width ,  initial-scale=1.0, user-scalable=yes">
 		<meta name="keywords" content="art, digitalart, illustrations">
 		<meta name="author" content="David Lin Wang">
 		<meta name="description" content="Welcome to my page.">
@@ -38,7 +38,6 @@
 		.sidebar{
 		width: 30%;
 		float: left;
-		position: relative;
 		top: 0;
 		flex: 1;
 		}
@@ -57,7 +56,7 @@
 		padding: 10px;
 		background-color:white;
 		bottom: 0;
-		border:solid 1px teal;
+		border:solid, 1px, teal;
 		border-radius:20px;
 		text-align:center;
 		font-size:30px;
@@ -67,19 +66,29 @@
 	<header>
 		<h1 class="presentation">DAVID LIN WANG</h1>
 		<!--Top banner-->
-		<div id="mobile-menu-button">
+		<div class="mobile-menu-button">
 		<span></span>
 		<span></span>
 		<span></span>
 		</div>
-		<nav id="mobile-menu" class="topnav content">
-			<a class="active" href="index.html">Home</a>
-			<a href="Illustrations.html">Illustrations</a>
-			<a href="blog.html">Blog</a>
-			<a href="Webcomic.html">Webcomic</a>
-			<a href="About.html">About</a>
-		</nav>
-		<!--Principal text of the home page-->
+		 <nav class="topnav content desktop-menu">
+            <a class="active" href="index.html">Home</a>
+            <a href="Illustrations.html">Illustrations</a>
+            <a href="blog.html">Blog</a>
+            <a href="Webcomic.html">Webcomic</a>
+            <a href="About.html">About</a>
+        </nav>
+
+    <!-- Contenu principal de la page -->
+
+    <!-- Menu mobile (caché par défaut) -->
+    <nav id="mobile-menu" class="mobile-menu">
+        <a class="active" href="index.html">Home</a>
+        <a href="Illustrations.html">Illustrations</a>
+        <a href="blog.html">Blog</a>
+        <a href="Webcomic.html">Webcomic</a>
+        <a href="About.html">About</a>
+    </nav>
 		
 	</header>
 		<body>
@@ -107,6 +116,8 @@
 				</div>
 				<div class="recent-articles">
 				</div>
+				<div class="recent-article">
+				</div>
 				<ul class="lastArticles" id="listeArticles"></ul>
 				<div class="news">
 				<p>Featured<p>
@@ -114,10 +125,11 @@
 				</div>
 			</div>
 		</div>
+		</main>
 			<script src="lastposts.php"></script>
 			<script src="hamburger menu.js"></script>
 			<footer>
-				<p>. &copy All the right reserved</p>
+				<p>David Lin Wang &copy All the right reserved</p>
 				<p>The illustrations are protected by Creative Commons(CC) for more info, visit the page:</p>
 				<p>Website version:1.0(beta)</p>
 				<p>If you contact any issue, contact:</p>
@@ -125,4 +137,3 @@
 		</body>
 </html>
 	
-		
