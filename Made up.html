@@ -88,13 +88,28 @@
 	<header>
 		<h1 class="presentation">DAVID LIN WANG</h1>
 		<!--Top banner-->
-		<nav class="topnav content">
-			<a href="Artist blog 1.html">Home</a>
-			<a class="active" href="Illustrations.html">Illustrations</a>
-			<a href="blog.html">Blog</a>
-			<a href="Webcomic.html">Webcomic</a>
-			<a href="About.html">About</a>
-		</nav>
+		<div class="mobile-menu-button">
+		<span></span>
+		<span></span>
+		<span></span>
+		</div>
+		 <nav class="topnav content desktop-menu">
+            <a class="active" href="index.html">Home</a>
+            <a href="Illustrations.html">Illustrations</a>
+            <a href="blog.html">Blog</a>
+            <a href="Webcomic.html">Webcomic</a>
+            <a href="About.html">About</a>
+        </nav>
+
+
+    <!-- Menu mobile (Hidden by deffault) -->
+    <nav class="mobile-menu">
+        <a class="active" href="index.html">Home</a>
+        <a href="Illustrations.html">Illustrations</a>
+        <a href="blog.html">Blog</a>
+        <a href="Webcomic.html">Webcomic</a>
+        <a href="About.html">About</a>
+    </nav>
 		<nav class="second content">
 			<a  href="Illustrations.html">Artworks</a>
 			<a  href="Sketchbook.html">Sketchbook</a>
@@ -104,7 +119,7 @@
 	</header>
 	<body>
 		<article>
-			<div id="gallery" style="min-height:1800px;">
+			<div id="gallery" style="min-height:120vw;">
 				<div class="box grid-container">
 					<div class="grid-item">
 				</div>
@@ -121,5 +136,6 @@
 		</footer>
 		<script src="footer.js"></script>
 		<script src="Gallery.js"></script>
+		<script src="hamburger menu.js"></script>
 	</body>
 </html>
