@@ -1,7 +1,8 @@
-	*{
+		*{
 		text-decoration:none;
 		color:#002e4d;
 		font-style:italic;
+		box-sizing: border-box;
 		}
 		.topnav {
 		background-color:#b3f0ff;
@@ -98,10 +99,8 @@
 		footer {
          flex-shrink: 0;
 		background-color: #b3f0ff;
-		font-size: 30px;
 		text-align: center;
 		padding: 20px;
-		line-height:0.5rem;
 		}
 		body.show-footer footer {
 		display: block;
@@ -207,7 +206,7 @@
 		font-size: 30px;
 		  }
 		.sidebar {
-		width: 20%;
+		width:100%;
 		} 
 		.element-a-cacher {
         display: none;
@@ -262,7 +261,16 @@
             text-decoration: none;
             color: #002933;
             font-style: italic;
+			text-align:left;
+			border:1px solid teal;
+			border-radius:5%;
         }
+		.mobile-menu a:hover {
+         background-color:white;  
+        }
+		.mobile-menu a:active{
+		color:white;
+		}
 		@media (min-width: 769px) {
 		.mobile-menu-button {
 		display: none; 
