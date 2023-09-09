@@ -144,7 +144,6 @@
 		text-decoration:none;
 		}
 		.recent-articles2 {
-		margin-top: 50px; 
 		width:100%;
 		border: solid black 1px;
 		overflow: hidden;
@@ -152,7 +151,6 @@
 		flex-direction: column;
 		text-decoration:none;
 		background-color:aqua;
-		height:120px;
 		}
 		.recent-article {
 		background-color:aqua;
