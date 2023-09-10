@@ -309,6 +309,7 @@
 		align-items: center;
 		flex: 1;
 		flex-grow: 1;
+		font-size: 8vw;
 		}
 		.second a{
 		text-align:center;
