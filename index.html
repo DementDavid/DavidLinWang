@@ -14,11 +14,20 @@
 	<title>David Lin Wang</title>
 	<style>
 		
-       .container{
+       		@media (min-width: 769px){
+		.container{
 		overflow:hidden;
 		display:flex;
 		margin-top:3vw;
 		margin-bottom:3vw;
+		}
+		}
+		@media (max-width: 769px){
+		.container{
+		overflow:hidden;
+		margin-top:3vw;
+		margin-bottom:3vw;
+		}
 		}
 		.container::after {
 		content: "";
@@ -34,11 +43,19 @@
 		overflow:hidden;
 		margin-right:3vw;
 		}
+		@media (min-width: 769px){
 		.sidebar{
 		width: 30%;
 		float: left;
 		top: 0;
 		flex: 1;
+		}
+		}
+		@media (max-width: 769px){
+		.sidebar{
+		top: 0;
+		flex: 1;
+		}
 		}
 		.topnav a.active{
 		background-color:white;
