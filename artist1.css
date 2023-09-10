@@ -105,6 +105,7 @@
 		body.show-footer footer {
 		display: block;
 		}
+		@media (min-width: 769px) {
 		.grid-container {
 		flex:2;
 		display: grid;
@@ -113,6 +114,15 @@
 		width:80%;
 		gap:10px;
 		flex:2;
+		}
+		}
+		@media (max-width: 769px) {
+		.grid-container {
+		flex:2;  
+		width:100%;
+		gap:10px;
+		flex:2;
+		}
 		}
 		.grid-item {
 		padding:10px 10px;
