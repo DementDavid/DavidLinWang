@@ -84,21 +84,17 @@
 		}
 		@media (min-width: 769px) {
 		.grid-container {
-		flex:2;
 		display: grid;
 		grid-template-columns: repeat(3, 1fr); 
 		grid-template-rows: repeat(3, 1fr); 
 		width:80%;
 		gap:10px;
-		flex:2;
 		}
 		}
 		@media (max-width: 769px) {
 		.grid-container {
-		flex:2;  
 		width:100%;
 		gap:10px;
-		flex:2;
 		}
 		}
 		.grid-item {
