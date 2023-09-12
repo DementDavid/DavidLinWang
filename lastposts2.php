@@ -8,8 +8,8 @@ fetch('php2.json')
 						const articleDiv = document.createElement('div');
 						articleDiv.className = 'recent-article';
 						const a = document.createElement('a');
-						a.href = articles[i].lien;
-						a.textContent = articles[i].titre;
+						a.href = articles[i].link;
+						a.textContent = articles[i].link;
 						articleDiv.appendChild(a);
 						recentArticlesContainer.appendChild(articleDiv);
 					}
