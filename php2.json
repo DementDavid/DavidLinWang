@@ -1,50 +1,8 @@
 [
     {
-        "titre": "Article 1",
-        "lien": "http://localhost/simulated-php/David%20Lin.html",
+        "title": "Website is now live",
+        "link": "Website is now live",
         "date": "2023-08-01",
-		"content":"slfsflsfjs"
-    },
-	{
-        "titre": "Article 1",
-        "lien": "http://localhost/simulated-php/David%20Lin.html",
-        "date": "2023-08-01",
-		"content":"slfsflsfjs"
-    },
-	{
-        "titre": "Article 1",
-        "lien": "http://localhost/simulated-php/David%20Lin.html",
-        "date": "2023-08-01",
-		"content":"slfsflsfjs"
-    },
-	{
-        "titre": "Article 1",
-        "lien": "http://localhost/simulated-php/David%20Lin.html",
-        "date": "2023-08-01",
-		"content":"slfsflsfjs"
-    },
-	{
-        "titre": "Article 1",
-        "lien": "http://localhost/simulated-php/David%20Lin.html",
-        "date": "2023-08-01",
-		"content":"slfsflsfjs"
-    },
-	{
-        "titre": "Article 1",
-        "lien": "http://localhost/simulated-php/David%20Lin.html",
-        "date": "2023-08-01",
-		"content":"slfsflsfjs"
-    },
-	{
-        "titre": "Article 1",
-        "lien": "http://localhost/simulated-php/David%20Lin.html",
-        "date": "2023-08-01",
-		"content":"slfsflsfjs"
-    },
-	{
-        "titre": "Article 1",
-        "lien": "http://localhost/simulated-php/David%20Lin.html",
-        "date": "2023-08-01",
-		"content":"slfsflsfjs"
+	"description":"slfsflsfjs"
     }
 ]
