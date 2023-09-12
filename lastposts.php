@@ -13,11 +13,6 @@ fetch('php2.json')
       articleLink.textContent = articles[i].title;
       articleDiv.appendChild(articleLink);
 
-      const articleContent = document.createElement('p');
-      articleContent.className = 'description anulled';
-      articleContent.textContent = articles[i].description anulled;
-      articleDiv.appendChild(articleContent);
-
       const articleDate = document.createElement('p');
       articleDate.className = 'date';
       articleDate.textContent = articles[i].date;
