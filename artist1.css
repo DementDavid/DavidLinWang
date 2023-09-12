@@ -143,6 +143,8 @@
 		top:0;
 		border:solid black 1px;
 		height:12vw;
+		display:flex;
+		justify-content:center;
 		}
 		.recent-article:li{
 		border: solid black 1px;
