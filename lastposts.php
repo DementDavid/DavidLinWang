@@ -9,13 +9,13 @@ fetch('php2.json')
       articleDiv.className = 'recent-article';
 
       const articleLink = document.createElement('a');
-      articleLink.href = articles[i].lien;
-      articleLink.textContent = articles[i].titre;
+      articleLink.href = articles[i].link;
+      articleLink.textContent = articles[i].title;
       articleDiv.appendChild(articleLink);
 
       const articleContent = document.createElement('p');
-      articleContent.className = 'content';
-      articleContent.textContent = articles[i].content;
+      articleContent.className = 'description anulled';
+      articleContent.textContent = articles[i].description anulled;
       articleDiv.appendChild(articleContent);
 
       const articleDate = document.createElement('p');
