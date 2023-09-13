@@ -194,6 +194,7 @@
 		text-decoration:underline;
 		border:solid 1px teal;
 		border-radius:3vw;
+		margin-bottom:2rem;
 		}
 		.social{
 		background-color:white;
@@ -217,7 +218,9 @@
 		position:absolute;
 		top:0;
 		right:0;
-		width:3rem;
+		margin-top:0.5rem;
+		margin-right:0.5rem;
+		width:24rem;
 		}
 		.socialtop img{
 		width:3rem;
