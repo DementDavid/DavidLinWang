@@ -14,7 +14,6 @@
 		text-decoration:none;
 		display:flex;
 		align-items: center;
-		border-radius:30px;
 		}
 		.topnav a{
 		padding: 30px 80px; 
@@ -43,7 +42,6 @@
 		margin-bottom: 1vw;
 		width:100%;
 		border:solid 1px #b3f0ff;
-		border-radius:1vw; 
 		}
 		.topnav a:last-child {
 		border-right: none; 
@@ -67,6 +65,7 @@
 		background-color:#ddf6ff;
 		display:flex;
 		flex-direction:column;
+		margin:0;
 		}
 		h2{
 		text-align:center;
@@ -188,6 +187,10 @@
 		position:relative;
 		bottom:0;
 		}
+		.cc{
+		text-decoration:underline;
+		border:solid 1px teal;
+		border-radius:3vw;
 		@media (max-width: 768px) {
 		.container {
 		width: 100%; 
