@@ -204,7 +204,23 @@
 		justify-content:center;
 		}
 		.social img{
-		width:100%;
+		width:3rem;
+		height:auto;
+		}
+		.socialtop{
+		background-color:white;
+		border:solid 1px teal;
+		border-radius:2vw;
+		align-items:center;
+		display:flex;
+		justify-content:center;
+		position:absolute;
+		top:0;
+		right:0;
+		width:3rem;
+		}
+		.socialtop img{
+		width:3rem;
 		height:auto;
 		}
 		@media (max-width: 768px) {
