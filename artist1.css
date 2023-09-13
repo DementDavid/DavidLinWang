@@ -144,6 +144,8 @@
 		height:12vw;
 		display:flex;
 		justify-content:center;
+		align-items:center;
+		flex-direction:column;
 		}
 		.recent-article:li{
 		border: solid black 1px;
