@@ -191,6 +191,7 @@
 		text-decoration:underline;
 		border:solid 1px teal;
 		border-radius:3vw;
+		}
 		@media (max-width: 768px) {
 		.container {
 		width: 100%; 
