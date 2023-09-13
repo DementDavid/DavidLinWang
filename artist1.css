@@ -77,6 +77,7 @@
 		background-color: #b3f0ff;
 		text-align: center;
 		padding: 20px;
+		font-size:1.5rem;
 		}
 		body.show-footer footer {
 		display: block;
@@ -200,6 +201,7 @@
 		border-radius:2vw;
 		align-items:center;
 		display:flex;
+		justify-content:center;
 		}
 		@media (max-width: 768px) {
 		.container {
