@@ -342,6 +342,9 @@
 		width:3rem;
 		height:auto;
 		}
+		.socialprimal{
+		text-align:center;
+		}
 		.presentation{
 		background-color:#b3f0ff;
 		font-size:5vw;
@@ -384,6 +387,9 @@
 		}
 		.second .current{
 		background-color:white;
+		}
+		.socialprimal{
+		text-align:center;
 		}
 		}
 
