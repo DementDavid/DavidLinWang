@@ -35,3 +35,18 @@ nextButton.addEventListener("click", () => {
     }
 });
 showCurrentPage();
+function showCurrentPage() {
+    const startIndex = (currentPage - 1) * imagesPerPage;
+    const endIndex = startIndex + imagesPerPage;
+    const images = gallery.querySelectorAll("img");
+    
+    images.forEach((img, index) => {
+        if (index >= startIndex && index < endIndex) {
+            img.style.visibility = "visible"; // Rendre visible l'image actuelle
+        } else {
+            img.style.visibility = "hidden"; // Masquer les autres images
+        }
+    });
+
+    currentPageSpan.textContent = currentPage;
+}
