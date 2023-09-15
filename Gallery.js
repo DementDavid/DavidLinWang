@@ -42,9 +42,9 @@ function showCurrentPage() {
     
     images.forEach((img, index) => {
         if (index >= startIndex && index < endIndex) {
-            img.style.visibility = "visible"; // Rendre visible l'image actuelle
+            img.style.visibility = "visible";
         } else {
-            img.style.visibility = "hidden"; // Masquer les autres images
+            img.style.visibility = "hidden";
         }
     });
 
