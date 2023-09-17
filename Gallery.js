@@ -34,19 +34,5 @@ nextButton.addEventListener("click", () => {
         showCurrentPage();
     }
 });
-showCurrentPage();
-function showCurrentPage() {
-    const startIndex = (currentPage - 1) * imagesPerPage;
-    const endIndex = startIndex + imagesPerPage;
-    const images = gallery.querySelectorAll("img");
-    
-    images.forEach((img, index) => {
-        if (index >= startIndex && index < endIndex) {
-            img.style.visibility = "visible";
-        } else {
-            img.style.visibility = "hidden";
-        }
-    });
-
     currentPageSpan.textContent = currentPage;
 }
