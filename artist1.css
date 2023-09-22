@@ -222,6 +222,7 @@
 		border:solid 1px #b3f0ff;
 		}
 		.article{
+		background-color:white;
 		min-height:100vw;
 		display:flex;
 		justify-content:center;
@@ -359,6 +360,7 @@
 		flex-direction:column;
 		}
 		.article{
+		background-color:white;
 		min-height:100vw;
 		display:flex;
 		justify-content:center;
