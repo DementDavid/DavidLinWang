@@ -369,6 +369,16 @@
 		font-size:50px;
 		padding:165px;
 		}
+		.article2{
+		background-color:white;
+		min-height:100vw;
+		margin-left:20px;
+		margin-bottom:20px;
+		margin-right:20px;
+		border:1px solid teal;
+		border-radius:3px;
+		font-size:50px;
+		}
 		}
 		@media (max-width: 769px) {
 		.desktop-menu {
