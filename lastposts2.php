@@ -9,7 +9,7 @@ fetch('php2.json')
 						articleDiv.className = 'recent-article';
 						const a = document.createElement('a');
 						a.href = articles[i].link;
-						a.textContent = articles[i].link;
+						a.textContent = articles[i].title;
 						articleDiv.appendChild(a);
 						recentArticlesContainer.appendChild(articleDiv);
 					}
