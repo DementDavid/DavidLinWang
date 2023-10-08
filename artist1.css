@@ -229,6 +229,7 @@
 		min-height:100vw;
 		border:1px solid teal;
 		border-radius:3px;
+		box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 		}
 		}
 		.mobile-menu-button {
@@ -369,6 +370,7 @@
 		margin-right:200px;
 		border-radius:3px;
 		font-size:50px;
+		box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 		}
 		.article2{
 		background-color:white;
