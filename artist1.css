@@ -115,7 +115,7 @@
 		}
 		.recent-articles2 {
 		width:100%;
-		border: solid black 1px;
+		border: solid #055041 1px;
 		overflow: hidden;
 		display: flex;
 		flex-direction: column;
@@ -355,7 +355,7 @@
 		color: white;
 		text-align: center;
 		top:0;
-		border:solid black 1px;
+		border:solid #055041 1px;
 		height:12vw;
 		display:flex;
 		justify-content:center;
@@ -420,7 +420,7 @@
 		color: white;
 		text-align: center;
 		top:0;
-		border:solid black 1px;
+		border:solid #055041 1px;
 		height:19vw;
 		display:flex;
 		justify-content:center;
