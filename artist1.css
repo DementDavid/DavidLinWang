@@ -5,7 +5,7 @@
 		box-sizing: border-box;
 		}
 		.topnav {
-		background-color:#b3f0ff;
+		background:linear-gradient(to right, #b3f0ff, #0099cc 30%, #f7bff7 80%);
 		font-size:20px;
 		width:100%;
 		height:85px;
@@ -35,11 +35,12 @@
 		border-right: none; 
 		}
 		.topnav a:active{
-		color:white;
+		filter: brightness(1.2);
 		}
 		.topnav a:hover{
 		color:#002933;
 		background-color:white;
+		opacity: 0.3;
 		}
 		main{
 		font-family:roboto;
@@ -62,7 +63,7 @@
 		}
 		footer {
          	flex-shrink: 0;
-		background-color: #b3f0ff;
+		background:linear-gradient(to right, #b3f0ff, #0099cc 30%, #f7bff7 80%);
 		text-align: center;
 		padding: 20px;
 		font-size:1.5rem;
@@ -215,7 +216,7 @@
 		height:auto;
 		}
 		.presentation{
-		background-color:#b3f0ff;
+		background:linear-gradient(to right, #b3f0ff, #0099cc 30%, #f7bff7 80%);
 		font-size:5vw;
 		margin-top:0;
 		margin-right: 0;
@@ -260,7 +261,7 @@
         	}
 	    .mobile-menu {
             display: none;
-            background-color: #b3f0ff;
+            background:linear-gradient(to right, #b3f0ff, #0099cc 30%, #f7bff7 80%);
             position: absolute;
             top: 100px;
             left: 0;
@@ -339,7 +340,7 @@
 		text-align:center;
 		}
 		.presentation{
-		background-color:#b3f0ff;
+		background:linear-gradient(to right, #b3f0ff, #0099cc 30%, #f7bff7 80%);
 		font-size:5vw;
 		text-align:center;
 		margin-top:0;
