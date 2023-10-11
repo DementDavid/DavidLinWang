@@ -11,6 +11,11 @@ fetch('php2.json')
 						a.href = articles[i].link;
 						a.textContent = articles[i].title;
 						articleDiv.appendChild(a);
+						const articleDate = document.createElement('p');
+      						articleDate.className = 'date';
+      						articleDate.textContent = articles[i].date;
+      						articleDiv.appendChild(articleDate);
+						
 						recentArticlesContainer.appendChild(articleDiv);
 					}
 				})
