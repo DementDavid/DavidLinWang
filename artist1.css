@@ -5,7 +5,7 @@
 		box-sizing: border-box;
 		}
 		.topnav {
-		background:linear-gradient(to right, #b3f0ff, #0099cc 30%, #f7bff7 80%);
+		background:linear-gradient(to right, #b3f0ff, #0099cc 30%, #efebc2 80%);
 		font-size:20px;
 		width:100%;
 		height:85px;
@@ -63,7 +63,7 @@
 		}
 		footer {
          	flex-shrink: 0;
-		background:linear-gradient(to right, #b3f0ff, #0099cc 30%, #f7bff7 80%);
+		background:linear-gradient(to right, #b3f0ff, #0099cc 30%, #efebc2 80%);
 		text-align: center;
 		padding: 20px;
 		font-size:1.5rem;
@@ -216,7 +216,7 @@
 		height:auto;
 		}
 		.presentation{
-		background:linear-gradient(to right, #b3f0ff, #0099cc 30%, #f7bff7 80%);
+		background:linear-gradient(to right, #b3f0ff, #0099cc 30%, #efebc2 80%);
 		font-size:5vw;
 		margin-top:0;
 		margin-right: 0;
