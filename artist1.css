@@ -183,6 +183,12 @@
 		width:3rem;
 		height:auto;
 		}
+		.publish{
+		text-align:center;
+		font-size:50px;
+		border:solid 1px teal;
+		border-radius:10px;
+		}
 		@media (max-width: 768px) {
 		.container {
 		width: 100%; 
