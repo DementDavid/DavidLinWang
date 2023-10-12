@@ -231,6 +231,9 @@
 		border:1px solid teal;
 		border-radius:3px;
 		box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+		padding: 69px;
+		margin-top: 49px;
+		margin-bottom: 63px;
 		}
 		}
 		.mobile-menu-button {
@@ -367,7 +370,7 @@
 		background-color:white;
 		min-height:100vw;
 		margin-left:200px;
-		margin-bottom:20px;
+		margin-bottom:63px;
 		margin-right:200px;
 		border-radius:3px;
 		font-size:50px;
