@@ -1,6 +1,34 @@
-//Article's table
+        //Article's table
         const articles = [
      {
+        title: "Quasar",
+        link: "https://dementdavid.github.io/DavidLinWang.github.io/Posts/Quasar.html",
+        date: "11-10-2023",
+        description: "slfsflsfjs",
+		category:"Artwork"
+    },
+	     {
+        title: "Quasar",
+        link: "https://dementdavid.github.io/DavidLinWang.github.io/Posts/Quasar.html",
+        date: "11-10-2023",
+        description: "slfsflsfjs",
+		category:"Artwork"
+    },
+	     {
+        title: "Quasar",
+        link: "https://dementdavid.github.io/DavidLinWang.github.io/Posts/Quasar.html",
+        date: "11-10-2023",
+        description: "slfsflsfjs",
+		category:"Artwork"
+    },
+	     {
+        title: "Quasar",
+        link: "https://dementdavid.github.io/DavidLinWang.github.io/Posts/Quasar.html",
+        date: "11-10-2023",
+        description: "slfsflsfjs",
+		category:"Artwork"
+    },
+	     {
         title: "Quasar",
         link: "https://dementdavid.github.io/DavidLinWang.github.io/Posts/Quasar.html",
         date: "11-10-2023",
@@ -25,29 +53,33 @@
 
         const recentArticlesContainer = document.querySelector('.recent-articles2');
         const categoryFilter = document.getElementById('categoryFilter');
+		const maxArticlesPerPage = 5;
+        let currentPage = 1; 
+        let startArticleIndex = 0; 
 
 		// Display articles by Category
         function displayArticles() {
             const selectedCategory = categoryFilter.value;
-
+			const filteredArticles = articles.filter(article => selectedCategory === 'all' || article.category === selectedCategory);
+		 
+            startArticleIndex = (currentPage - 1) * maxArticlesPerPage;
+            const endArticleIndex = startArticleIndex + maxArticlesPerPage;
             // Refresh table
             recentArticlesContainer.innerHTML = '';
 
-            articles.forEach(article => {
-                if (selectedCategory === 'all' || article.category === selectedCategory) {
-                    const articleDiv = document.createElement('div');
-                    articleDiv.className = 'recent-article';
-                    const a = document.createElement('a');
-                    a.href = article.link;
-                    a.textContent = article.title;
-                    articleDiv.appendChild(a);
-                    const articleDate = document.createElement('p');
-                    articleDate.className = 'date';
-                    articleDate.textContent = article.date;
-                    articleDiv.appendChild(articleDate);
+            filteredArticles.slice(startArticleIndex, endArticleIndex).forEach(article => {
+                const articleDiv = document.createElement('div');
+                articleDiv.className = 'recent-article';
+                const a = document.createElement('a');
+                a.href = article.link;
+                a.textContent = article.title;
+                articleDiv.appendChild(a);
+                const articleDate = document.createElement('p');
+                articleDate.className = 'date';
+                articleDate.textContent = article.date;
+                articleDiv.appendChild(articleDate);
 
-                    recentArticlesContainer.appendChild(articleDiv);
-                }
+                recentArticlesContainer.appendChild(articleDiv);
             });
         }
 
