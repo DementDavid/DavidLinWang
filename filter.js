@@ -1,0 +1,58 @@
+//Article's table
+        const articles = [
+     {
+        title: "Quasar",
+        link: "https://dementdavid.github.io/DavidLinWang.github.io/Posts/Quasar.html",
+        date: "11-10-2023",
+        description: "slfsflsfjs",
+		category:"Artwork"
+    },
+    {
+        title: "Release 1.0 patch notes",
+        link: "https://dementdavid.github.io/DavidLinWang.github.io/Release1_0.html",
+        date: "27-09-2023",
+        description: "slfsflsfjs",
+		category:"Updates"
+    },
+    {
+        title: "Website is now live",
+        link: "https://dementdavid.github.io/DavidLinWang.github.io/Website%20is%20now%20live.html",
+        date: "24-09-2023",
+        description: "slfsflsfjs",
+		category:"Post"
+    },
+        ];
+
+        const recentArticlesContainer = document.querySelector('.recent-articles2');
+        const categoryFilter = document.getElementById('categoryFilter');
+
+		// Display articles by Category
+        function displayArticles() {
+            const selectedCategory = categoryFilter.value;
+
+            // Refresh table
+            recentArticlesContainer.innerHTML = '';
+
+            articles.forEach(article => {
+                if (selectedCategory === 'all' || article.category === selectedCategory) {
+                    const articleDiv = document.createElement('div');
+                    articleDiv.className = 'recent-article';
+                    const a = document.createElement('a');
+                    a.href = article.link;
+                    a.textContent = article.title;
+                    articleDiv.appendChild(a);
+                    const articleDate = document.createElement('p');
+                    articleDate.className = 'date';
+                    articleDate.textContent = article.date;
+                    articleDiv.appendChild(articleDate);
+
+                    recentArticlesContainer.appendChild(articleDiv);
+                }
+            });
+        }
+
+        // Hearer of events
+        categoryFilter.addEventListener('change', displayArticles);
+
+        // Display function
+        displayArticles();
