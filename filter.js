@@ -1,59 +1,38 @@
         //Article's table
         const articles = [
-     {
-        title: "Quasar",
-        link: "https://dementdavid.github.io/DavidLinWang.github.io/Posts/Quasar.html",
-        date: "11-10-2023",
+    	{
+        title: "Autmun is here",
+        link: "https://dementdavid.github.io/DavidLinWang.github.io/Posts/Autumn is here.html",
+        date: "17-10-2023",
         description: "slfsflsfjs",
-		category:"Artwork"
+	category:"Artwork"
     },
 	     {
         title: "Quasar",
         link: "https://dementdavid.github.io/DavidLinWang.github.io/Posts/Quasar.html",
         date: "11-10-2023",
         description: "slfsflsfjs",
-		category:"Artwork"
-    },
-	     {
-        title: "Quasar",
-        link: "https://dementdavid.github.io/DavidLinWang.github.io/Posts/Quasar.html",
-        date: "11-10-2023",
-        description: "slfsflsfjs",
-		category:"Artwork"
-    },
-	     {
-        title: "Quasar",
-        link: "https://dementdavid.github.io/DavidLinWang.github.io/Posts/Quasar.html",
-        date: "11-10-2023",
-        description: "slfsflsfjs",
-		category:"Artwork"
-    },
-	     {
-        title: "Quasar",
-        link: "https://dementdavid.github.io/DavidLinWang.github.io/Posts/Quasar.html",
-        date: "11-10-2023",
-        description: "slfsflsfjs",
-		category:"Artwork"
+	category:"Artwork"
     },
     {
         title: "Release 1.0 patch notes",
         link: "https://dementdavid.github.io/DavidLinWang.github.io/Release1_0.html",
         date: "27-09-2023",
         description: "slfsflsfjs",
-		category:"Updates"
+	category:"Updates"
     },
     {
         title: "Website is now live",
         link: "https://dementdavid.github.io/DavidLinWang.github.io/Website%20is%20now%20live.html",
         date: "24-09-2023",
         description: "slfsflsfjs",
-		category:"Post"
+	category:"Post"
     },
         ];
 
         const recentArticlesContainer = document.querySelector('.recent-articles2');
         const categoryFilter = document.getElementById('categoryFilter');
-		const maxArticlesPerPage = 5;
+		const maxArticlesPerPage = 10;
         let currentPage = 1; 
         let startArticleIndex = 0; 
 
