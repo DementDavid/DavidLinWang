@@ -1,7 +1,7 @@
         //Article's table
         const articles = [
     	{
-        title: "Autmun is here",
+        title: "Autumn is here",
         link: "https://dementdavid.github.io/DavidLinWang.github.io/Posts/Autumn is here.html",
         date: "17-10-2023",
         description: "slfsflsfjs",
