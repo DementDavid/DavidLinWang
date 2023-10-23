@@ -5,7 +5,7 @@
         link: "https://dementdavid.github.io/DavidLinWang.github.io/Posts/Autumn is here.html",
         date: "25-10-2023",
         description: "slfsflsfjs",
-	category:"Update"
+	category:"Updates"
     },
     	{
         title: "Autumn is here",
