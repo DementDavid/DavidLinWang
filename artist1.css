@@ -383,6 +383,7 @@
 		align-items:center;
 		flex-direction:column;
 		font-size:40px;
+		line-height:0.2;
 		}
 		.article{
 		background-color:white;
@@ -452,6 +453,7 @@
 		align-items:center;
 		flex-direction:column;
 		font-size:20px;
+		line-height:0.2;
 		}
 		}
 
