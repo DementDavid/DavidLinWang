@@ -1,6 +1,9 @@
 .returnall{
   border:1px solid teal;
   background-color:aqua;
-  border-radius:19px;
+  border-radius:9px;
   font-size:25px;
+  display:flex;
+  justify-content:center;
+  margin-bottom:30px;
 }
