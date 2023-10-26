@@ -1,13 +1,12 @@
 .returnall{
-  border:1px solid teal;
-  background-color:aqua;
-  border-radius:9px;
   font-size:25px;
   display:flex;
   justify-content:center;
   margin-bottom:30px;
 }
 .button{
-  background-color:teal;
-  font-size:25px;
+  background-color:aqua;
+  font-size:30px;
+  border:1px solid teal;
+  border-radius:10px;
 }
