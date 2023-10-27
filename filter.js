@@ -2,7 +2,7 @@
         const articles = [
 		{
         title: "Update 1.1",
-        link: "https://dementdavid.github.io/DavidLinWang.github.io/Posts/Autumn is here.html",
+        link: "https://dementdavid.github.io/DavidLinWang.github.io/Posts/Update1_1.html",
         date: "25-10-2023",
         description: "slfsflsfjs",
 	category:"Updates"
