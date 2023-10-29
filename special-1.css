@@ -13,3 +13,31 @@
 .button a:hover{
   background-color:white;
 }
+.choose{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	    }
+	.square {
+	width: 10%;
+	height:70px;
+	background: linear-gradient(to right, #b3f0ff 40%, #0099cc 30%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+	.square:hover{
+	background-color:white;
+	}
+
+.left {
+    border-right: 2px solid #fff;
+	border-radius:10px;
+	margin:0;
+}
+
+.right {
+    border-left: 2px solid #fff;
+	border-radius:10px;
+	margin:0;
+}
