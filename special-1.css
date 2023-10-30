@@ -25,10 +25,14 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	transition: background-color 0.3s;
 }
 	.square:hover{
-	background-color:white;
+	background:#94effb;
+	transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
 	}
+	.square a:hover{
+	color:teal;
 
 .left {
     border-right: 2px solid #fff;
