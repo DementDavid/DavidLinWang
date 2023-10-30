@@ -33,6 +33,10 @@
 	}
 	.square a:hover{
 	color:teal;
+	}
+.hightlight{
+background:white;
+
 
 .left {
     border-right: 2px solid #fff;
@@ -45,4 +49,5 @@
 	border-radius:10px;
 	margin:0;
 }
+
 
