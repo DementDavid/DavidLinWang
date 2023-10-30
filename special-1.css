@@ -21,7 +21,7 @@
 	.square {
 	width: 10%;
 	height:70px;
-	background: linear-gradient(to right, #b3f0ff 40%, #0099cc 30%);
+	background: linear-gradient(to right, #b3f0ff , #2196F3 80%);
 	display: flex;
 	justify-content: center;
 	align-items: center;
