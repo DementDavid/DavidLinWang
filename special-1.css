@@ -4,8 +4,12 @@
   justify-content:center;
   margin-bottom:30px;
 }
+.returnall:hover{
+background:aqua;
+transition :background-color 0.3s;
+}
 .button{
-  background-color:aqua;
+  background: linear-gradient(to right, #b3f0ff , #2196F3 80%);
   font-size:30px;
   border:1px solid teal;
   border-radius:10px;
