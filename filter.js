@@ -49,6 +49,7 @@
  	 .then(data => {
 	articles= data;
     	console.log(data);
+	displayArticles();
   	})
   	.catch(error => {
     	console.error('Erreur :', error);
