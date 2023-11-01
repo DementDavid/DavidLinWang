@@ -1,5 +1,5 @@
         //Article's table
-        const articles = [
+        /*const articles = [
 		{
         title: "&#127875;&#127875; Happy Halloween 2023",
         link: "https://dementdavid.github.io/DavidLinWang.github.io/Posts/HappyHalloween2023.html",
@@ -43,7 +43,15 @@
 	category:"Post"
     },
         ];
-
+	*/
+	fetch('php2.json')
+  	.then(response => response.json())
+ 	 .then(data => {
+    	console.log(data);
+  	})
+  	.catch(error => {
+    	console.error('Erreur :', error);
+  	});
         const recentArticlesContainer = document.querySelector('.recent-articles2');
         const categoryFilter = document.getElementById('categoryFilter');
 		const maxArticlesPerPage = 10;
