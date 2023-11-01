@@ -47,6 +47,7 @@
 	fetch('php2.json')
   	.then(response => response.json())
  	 .then(data => {
+	articles= data;
     	console.log(data);
   	})
   	.catch(error => {
