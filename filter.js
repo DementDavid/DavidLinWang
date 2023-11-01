@@ -1,7 +1,7 @@
         //Article's table
         const articles = [
 		{
-        title: "Happy Halloween 2023",
+        title: "&#127875;&#127875; Happy Halloween 2023",
         link: "https://dementdavid.github.io/DavidLinWang.github.io/Posts/HappyHalloween2023.html",
         date: "31-10-2023",
         description: "slfsflsfjs",
