@@ -44,83 +44,83 @@
     },
         ];
 	*/
-	const articlesContainer = document.getElementById('articles'); // Example constant variable
-	fetch('php2.json')
-  	.then(response => response.json())
- 	 .then(data => {
-	const articles = data;
-    	console.log(data);
-	displayArticles();
-  	})
-  	.catch(error => {
-    	console.error('Erreur :', error);
-  	});
-        document.addEventListener("DOMContentLoaded", function() {
-    // To execute at the end
+	let articles; // Declare articles in the global scope
 
-    const gridViewLink = document.getElementById("grid-view-link");
-    const listViewLink = document.getElementById("list-view-link");
-    const dualModeContainer = document.querySelector(".dual-mode.ar");
-    const recentArticlesContainer = document.querySelector('.ar');
-    const categoryFilter = document.getElementById('categoryFilter');
-    const maxArticlesPerPage = 9;
-    let currentPage = 1; 
-    let startArticleIndex = 0; 
+document.addEventListener("DOMContentLoaded", function () {
+  const articlesContainer = document.getElementById('articles');
+  const gridViewLink = document.getElementById("grid-view-link");
+  const listViewLink = document.getElementById("list-view-link");
+  const dualModeContainer = document.querySelector(".dual-mode.ar");
+  const recentArticlesContainer = document.querySelector('.ar');
+  const categoryFilter = document.getElementById('categoryFilter');
+  const maxArticlesPerPage = 9;
+  let currentPage = 1;
+  let startArticleIndex = 0;
 
-    // Display articles by Category
-    function displayArticles() {
-        const selectedCategory = categoryFilter.value;
-        const filteredArticles = articles.filter(article => selectedCategory === 'all' || article.category === selectedCategory);
+  // Display articles by Category
+  function displayArticles() {
+    const selectedCategory = categoryFilter.value;
+    const filteredArticles = articles.filter(article => selectedCategory === 'all' || article.category === selectedCategory);
 
-        startArticleIndex = (currentPage - 1) * maxArticlesPerPage;
-        const endArticleIndex = startArticleIndex + maxArticlesPerPage;
-        // Refresh table
-        recentArticlesContainer.innerHTML = ''; 
+    startArticleIndex = (currentPage - 1) * maxArticlesPerPage;
+    const endArticleIndex = startArticleIndex + maxArticlesPerPage;
+    // Refresh table
+    recentArticlesContainer.innerHTML = '';
 
-        filteredArticles.slice(startArticleIndex, endArticleIndex).forEach(article => {
-            const articleDiv = document.createElement('div');
-            articleDiv.className = 'recent-article';
+    filteredArticles.slice(startArticleIndex, endArticleIndex).forEach(article => {
+      const articleDiv = document.createElement('div');
+      articleDiv.className = 'recent-article';
 
-            const a = document.createElement('a');
-            a.href = article.link;
-            a.textContent = article.title;
-            articleDiv.appendChild(a);
-            
-            const articleImage = document.createElement('img')
-            articleImage.src = article.imageURL;
-            articleDiv.appendChild(articleImage);
+      const a = document.createElement('a');
+      a.href = article.link;
+      a.textContent = article.title;
+      articleDiv.appendChild(a);
 
-            const articleDate = document.createElement('p');
-            articleDate.className = 'date';
-            articleDate.textContent = article.date;
-            articleDiv.appendChild(articleDate);
+      const articleImage = document.createElement('img')
+      articleImage.src = article.imageURL;
+      articleDiv.appendChild(articleImage);
 
-            recentArticlesContainer.appendChild(articleDiv);
+      const articleDate = document.createElement('p');
+      articleDate.className = 'date';
+      articleDate.textContent = article.date;
+      articleDiv.appendChild(articleDate);
 
-            // Verificator
-            const isGridView = dualModeContainer.classList.contains('grid-mode');
-            if (!isGridView) {
-                articleDiv.removeChild(articleImage);
-            }
-        });
-    }
+      recentArticlesContainer.appendChild(articleDiv);
 
-    // Hearer of events
-    categoryFilter.addEventListener('change', displayArticles);
-
-    gridViewLink.addEventListener("click", function(event) {
-        event.preventDefault();
-        dualModeContainer.classList.add('grid-mode');
-        dualModeContainer.classList.remove('list-mode');
-        displayArticles();
+      // Verificator
+      const isGridView = dualModeContainer.classList.contains('grid-mode');
+      if (!isGridView) {
+        articleDiv.removeChild(articleImage);
+      }
     });
+  }
 
-    listViewLink.addEventListener("click", function(event) {
-        event.preventDefault();
-        dualModeContainer.classList.remove('grid-mode');
-        dualModeContainer.classList.add('list-mode');
-        displayArticles();
-    });
+  // Hearer of events
+  categoryFilter.addEventListener('change', displayArticles);
+
+  gridViewLink.addEventListener("click", function (event) {
+    event.preventDefault();
+    dualModeContainer.classList.add('grid-mode');
+    dualModeContainer.classList.remove('list-mode');
     displayArticles();
-});
+  });
 
+  listViewLink.addEventListener("click", function (event) {
+    event.preventDefault();
+    dualModeContainer.classList.remove('grid-mode');
+    dualModeContainer.classList.add('list-mode');
+    displayArticles();
+  });
+
+  // Fetch articles data
+  fetch('php2.json')
+    .then(response => response.json())
+    .then(data => {
+      articles = data;
+      console.log(articles);
+      displayArticles();
+    })
+    .catch(error => {
+      console.error('Erreur :', error);
+    });
+});
