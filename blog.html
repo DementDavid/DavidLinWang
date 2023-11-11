@@ -30,6 +30,12 @@
 		.article-list:empty + .sidebar {
 		display: none;
 		}
+		.grid-mode {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr); 
+		grid-template-rows: repeat(3, 1fr); 
+		gap:10px;
+		}
 		@media(max-width:768px){
 		.blogbox{
 		background-color: white;
