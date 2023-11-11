@@ -44,7 +44,6 @@
     },
         ];
 	*/
-	let articles;
 	fetch('php2.json')
   	.then(response => response.json())
  	 .then(data => {
