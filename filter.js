@@ -44,10 +44,11 @@
     },
         ];
 	*/
+	const articlesContainer = document.getElementById('articles'); // Example constant variable
 	fetch('php2.json')
   	.then(response => response.json())
  	 .then(data => {
-	articles= data;
+	const articles = data;
     	console.log(data);
 	displayArticles();
   	})
