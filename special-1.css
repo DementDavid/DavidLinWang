@@ -30,6 +30,7 @@ transition :background-color 0.3s;
 	justify-content: center;
 	align-items: center;
 	transition: background-color 0.3s;
+	border-radius:10px;
 }
 	.square:hover{
 	background:#94effb;
