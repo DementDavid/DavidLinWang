@@ -102,6 +102,8 @@ document.addEventListener("DOMContentLoaded", function () {
     event.preventDefault();
     dualModeContainer.classList.add('grid-mode');
     dualModeContainer.classList.remove('list-mode');
+    listViewLink.classList.remove('hightlight');
+    gridViewLink.classList.add('hightlight');
     displayArticles();
   });
 
