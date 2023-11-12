@@ -5,6 +5,7 @@
         "date": "31-10-2023",
         "description": "slfsflsfjs",
 	"category":"Post"
+	"imageURL":"https://dementdavid.github.io/DavidLinWang.github.io/images/Halloween%202023.jpg"
     },
 	{
         "title": "Update 1.1",
@@ -12,6 +13,7 @@
         "date": "25-10-2023",
         "description": "slfsflsfjs",
 	"category":"Update"
+	"imageURL":"https://dementdavid.github.io/DavidLinWang.github.io/images/Wind%20of%20discovery.jpg"
     },
      {
         "title": "Autumn is here",
@@ -19,24 +21,30 @@
         "date": "17-10-2023",
         "description": "slfsflsfjs",
 	"category":"Artwork"
+	"imageURL":"https://dementdavid.github.io/DavidLinWang.github.io/images/Autumn%20is%20here.jpg"
     },
      {
         "title": "Quasar",
         "link": "https://dementdavid.github.io/DavidLinWang.github.io/Posts/Quasar.html",
         "date": "11-10-2023",
-        "description": "slfsflsfjs"
+        "description": "slfsflsfjs",
+	"category":"Artwork"
+	"imageURL":"https://dementdavid.github.io/DavidLinWang.github.io/images/Cuasar.jpg"
     },
     {
         "title": "Release 1.0 patch notes",
         "link": "https://dementdavid.github.io/DavidLinWang.github.io/Release1_0.html",
         "date": "27-09-2023",
-        "description": "slfsflsfjs"
+        "description": "slfsflsfjs",
+	"category":"Update"
+	"imageURL":"https://dementdavid.github.io/DavidLinWang.github.io/images/Gear%20snail.jpg"
     },
     {
         "title": "Website is now live",
         "link": "https://dementdavid.github.io/DavidLinWang.github.io/Website%20is%20now%20live.html",
         "date": "24-09-2023",
         "description": "slfsflsfjs",
+	"category":"Artwork",
 	"imageURL":"https://dementdavid.github.io/DavidLinWang.github.io/images/Wind%20of%20discovery.jpg"
     }
 ]
