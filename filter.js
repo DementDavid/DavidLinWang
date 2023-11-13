@@ -92,6 +92,10 @@ document.addEventListener("DOMContentLoaded", function () {
       if (!isGridView) {
         articleDiv.removeChild(articleImage);
       }
+      else{
+	const styleSheet = document.getElementById('extrastyle').sheet;
+        styleSheet.insertRule('.recent-article { height: 40vw; }', styleSheet.cssRules.length);
+      }
     });
   }
 
