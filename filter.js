@@ -92,10 +92,7 @@ document.addEventListener("DOMContentLoaded", function () {
       if (!isGridView) {
         articleDiv.removeChild(articleImage);
       }
-      else{
-	const styleSheet = document.getElementById('extrastyle').sheet;
-        styleSheet.insertRule('.recent-article { height: 40vw; }', styleSheet.cssRules.length);
-      }
+	
     });
   }
 
@@ -119,6 +116,10 @@ document.addEventListener("DOMContentLoaded", function () {
     gridViewLink.classList.remove('hightlight');
     displayArticles();
   });
+	 if (isGridView) {
+	const styleSheet = document.getElementById('extrastyle').sheet;
+        styleSheet.insertRule('.recent-article { height: 40vw; }', styleSheet.cssRules.length);
+	 }
 
   // Fetch articles data
   fetch('php2.json')
