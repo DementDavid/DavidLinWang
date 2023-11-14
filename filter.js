@@ -71,14 +71,14 @@ document.addEventListener("DOMContentLoaded", function () {
       const articleDiv = document.createElement('div');
       articleDiv.className = 'recent-article';
 
+      const articleImage = document.createElement('img')
+      articleImage.src = article.imageURL;
+      articleDiv.appendChild(articleImage);
+
       const a = document.createElement('a');
       a.href = article.link;
       a.textContent = article.title;
       articleDiv.appendChild(a);
-
-      const articleImage = document.createElement('img')
-      articleImage.src = article.imageURL;
-      articleDiv.appendChild(articleImage);
 
       const articleDate = document.createElement('p');
       articleDate.className = 'date';
