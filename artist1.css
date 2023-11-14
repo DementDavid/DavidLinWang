@@ -129,11 +129,9 @@
 		text-decoration:none;
 		}
 		.recent-article img{
-		border: solid black 1px;
-    		text-decoration: none;
     		max-width: 100%;
-    		height:auto;
-		border-radius:10px;
+    		height:450px;
+		padding:20px;
 		}
       		#listeArticles {
         	list-style: none;
