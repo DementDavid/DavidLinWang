@@ -131,8 +131,9 @@
 		.recent-article img{
 		border: solid black 1px;
     		text-decoration: none;
-    		width: auto;
-    		height: 60%;
+    		max-width: 100%;
+    		height:auto;
+		border-radius:10px;
 		}
       		#listeArticles {
         	list-style: none;
