@@ -31,7 +31,8 @@ transition :background-color 0.3s;
 	align-items: center;
 	transition: background-color 0.3s;
 	border-radius:10px;
-	width:102px;
+	width:150px;
+	font-size:35px;
 }
 	.square:hover{
 	background:#94effb;
