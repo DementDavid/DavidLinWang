@@ -35,7 +35,7 @@ background: linear-gradient(to right, #289d30, #6bdb4f 30%, #d3ffc1 80%);
   opacity:0.3;
   filter: brightness(1.2);
 }
-.Ztopnav a:active;
+.Ztopnav a:active{
   background-color:white;
 }
 .Zfooter{
