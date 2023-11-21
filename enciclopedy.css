@@ -29,6 +29,7 @@ background: linear-gradient(to right, #289d30, #6bdb4f 30%, #d3ffc1 80%);
  border-color: white;
  flex-grow: 1;
  flex: 1;
+}
 .Ztopnav a:hover{
   color:black;
   background-color:white;
