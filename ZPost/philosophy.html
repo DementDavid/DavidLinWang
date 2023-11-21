@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width ,  initial-scale=1, user-scalable=yes">
+		<meta name="keywords" content="art, digitalart, illustrations">
+		<meta name="author" content="David Lin Wang">
+		<meta name="description" content="Welcome to my page.">
+		<link rel="icon" type="image/png" href="Shui he Tian.png">
+		<link rel="stylesheet" href="artist1.css">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	</head>
+	<title>Enciclopedy</title>
+	<style>
+		main{
+		font-family:roboto;
+		background-color:white;
+		margin:20px;
+		border-radius:10px;
+		min-height:1200px;
+		}
+		.topnav a.active{
+		background-color:white;
+		}
+		.sidebar-header {
+		height: 70px; 
+		background:linear-gradient(to right, #b3f0ff, #0099cc 30%, #f7bff7 80%);
+		width:100%;
+		}
+		.article-list:empty + .sidebar {
+		display: none;
+		}
+		@media(max-width:768px){
+		.blogbox{
+		background-color: white;
+    		min-height: 100vw;
+    		border: 1px solid teal;
+    		border-radius: 3px;
+    		box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    		margin-top: 49px;
+    		margin-bottom: 63px;
+		}
+		}
+		@media(min-width:768px){
+		.blogbox{
+		background-color: white;
+    		min-height: 100vw;
+    		border: 1px solid teal;
+    		border-radius: 3px;
+    		box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    		margin-top: 49px;
+    		margin-bottom: 63px;
+		margin:30px;
+		}
+		}
+		
+		
+	</style>
+	<script src="footer.js"></script>
+	<header>
+		<h1 class="Zpresentation">DAVID LIN WANG</h1>
+		<div class="socialtop">
+					<a href="https://www.instagram.com/dement__david/">
+						<div>
+							<img src="images/Insta icon.jpg" height="70vw" width="70vw" target="blank" alt=Instaicon.jpeg">
+						</div>
+					</a>
+					<a href="https://www.deviantart.com/dementdavid/">
+						<div>
+							<img src="images/deviantart icon.jpg" height="70vw" width="70vw" target="blank" alt=deviantarticon.jpeg">
+						</div>
+					</a>
+				</div>
+		<!--Top banner-->
+		<div class="mobile-menu-button presentation">
+		<span></span>
+		<span></span>
+		<span></span>
+		</div>
+		 <nav class="Ztopnav content desktop-menu">
+            <a href="https://dementdavid.github.io/DavidLinWang.github.io/index.html">&larr;Main Website</a>
+            <a href="https://dementdavid.github.io/DavidLinWang.github.io/enciclopedy.html">Biology</a>
+            <a class="active" href="philosophy.html">Philosophy<span class="locked">&#128274;</span></a>
+            <a href="Webcomic.html">Web development<span class="locked">&#128274;</span></a>
+            <a href="About.html">Artificial Intelligence<span class="locked">&#128274;</span></a>
+        </nav>
+
+
+    <!-- Menu mobile (Hidden by deffault) -->
+    <nav id="mobile-menu" class="mobile-menu">
+        <a href="https://dementdavid.github.io/DavidLinWang.github.io/index.html">&larr;Main Websit</a>
+        <a href="https://dementdavid.github.io/DavidLinWang.github.io/enciclopedy.html">Biology</a>
+        <a class="active" href="philosophy.html">Philosophy<span class="locked">&#128274;</span></a>
+        <a href="Webcomic.html">Web development<span class="locked">&#128274;</span></a>
+        <a href="About.html">Artificial Intelligence<span class="locked">&#128274;</span></a>
+    </nav>
+	</header>
+		<body>
+		<aside>
+			<div class="blogbox">
+				<div>
+					<h2>Welcome to the Enciclopedy Hub, the area of the garden dedicated to cultivate knowlegde:)</h2>
+          <h3>Philosophy posts</h3>
+				</div>
+				<article class="contents">
+					<div class="sidebar-header">
+						<h3 style="font-size:50px">Articles</h2>
+					</div>
+					<div class="recent-articles2">
+    					</div>
+				</article>
+			</div>
+		</aside>
+		<button class="nextButton">Next</button>
+		<button class="prevButton">Previous</button>
+		<span>Actual page: <span id="currentPage"></span></span>
+			<footer class="Zfooter">
+				<p>David Lin Wang &copy All the rights reserved 2023</p>
+				<p id="update">Webpage version:1.0</p>
+				<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"></a>
+				<br>The works are licensed under a</br>
+				<div class="cc">
+				<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><strong>Creative Commons Attribution 4.0 International License</strong></a>.
+				</div>
+				<br style="text-align:"center";>More on:</br>
+				<div class="social">
+					<a href="https://www.instagram.com/dement__david/">
+						<div>
+							<img src="images/Insta icon.jpg" height="70vw" width="70vw" target="blank" alt=Instaicon.jpeg">
+						</div>
+					</a>
+					<a href="https://www.deviantart.com/dementdavid/">
+						<div>
+							<img src="images/deviantart icon.jpg" height="70vw" width="70vw" target="blank" alt=deviantarticon.jpeg">
+						</div>
+          </a>
+				</div>
+			</footer>
+			<!--<script src="lastposts2.php"></script>-->
+			<script src="filter.js"></script>
+			<script src="pagination.js"></script>
+			<script src="hamburger menu.js"></script>
+			<script src="update.js"></script>
+		</body>
+</html>
