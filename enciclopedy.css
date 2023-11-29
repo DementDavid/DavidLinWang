@@ -46,4 +46,11 @@ background: linear-gradient(to right, #289d30, #6bdb4f 30%, #d3ffc1 80%);
     font-size: 1.5rem;
 }
 
+@media( max-width:769px){
+.Ztopnav.content{
+display:none;
+}
+}
+
+
   
