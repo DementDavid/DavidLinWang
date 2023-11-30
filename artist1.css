@@ -273,7 +273,7 @@
         	}
 	    .mobile-menu {
             display: none;
-            background:linear-gradient(to right, #b3f0ff, #0099cc 30%, #f7bff7 80%);
+            background:linear-gradient(to right, #b3f0ff, #0099cc 30%, #efebc2 80%);
             position: absolute;
             top: 100px;
             left: 0;
