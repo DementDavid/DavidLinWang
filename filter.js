@@ -130,6 +130,6 @@ document.addEventListener("DOMContentLoaded", function () {
       displayArticles();
     })
     .catch(error => {
-      console.error('Erreur :', error);
+      console.error('Error :', error);
     });
 });
