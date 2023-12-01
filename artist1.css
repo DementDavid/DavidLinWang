@@ -322,13 +322,12 @@
 		text-decoration:none;
 		display:flex;
 		align-items: center;
-		flex: 1;
-		flex-grow: 1;
 		}
 		.second a{
 		text-align:center;
 		text-decoration:none;
 		padding:10px;
+		flex: 1;
 		}
 		.second a:hover{
 		background-color:white;
