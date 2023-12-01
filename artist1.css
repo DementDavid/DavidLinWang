@@ -426,9 +426,13 @@
 		font-size: 5vw;
 		}
 		.second a{
+		display:flex
 		text-align:center;
 		text-decoration:none;
-		height:15vw;
+		height:5vw;
+		font-size:3vw;
+		justify-content:center;
+		align-items:center;
 		}
 		.second a:hover{
 		background-color:white;
