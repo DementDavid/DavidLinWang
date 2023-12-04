@@ -56,5 +56,24 @@ background:#c6f3e4;
 	border-radius:10px;
 	margin:0;
 }
+/* Enciclopedy Portal*/
+#enciclopedy-button {
+      position: fixed;
+      bottom: 10px;
+      left: 10px;
+      width: 50px;
+      height: 50px;
+      background-image: url('Shui he Tian.png'); 
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
 
 
