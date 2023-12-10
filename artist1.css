@@ -216,7 +216,7 @@
       color: #fff;
       padding: 5px;
       border-radius: 5px;
-      opacity: 0;
+      opacity: 1;
       transform: scale(0);
       transition: opacity 0.3s, transform 0.3s;
       z-index: 2; 
