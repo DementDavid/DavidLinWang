@@ -72,7 +72,7 @@ document.addEventListener("DOMContentLoaded", function () {
       articleDiv.className = 'recent-article';
 
       const articleImage = document.createElement('img')
-      articleDate.className = 'image';
+      articleImage.className = 'image';
       articleImage.src = article.imageURL;
       articleDiv.appendChild(articleImage);
 
