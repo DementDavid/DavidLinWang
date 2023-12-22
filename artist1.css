@@ -416,6 +416,8 @@
       		cursor: pointer;
       		transition: transform 0.3s ease-in-out;
       		aspect-ratio: 1 / 1;
+		height:10vw;
+		text-align:center;
 		}
 		.article{
 		background-color:white;
