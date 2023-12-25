@@ -95,7 +95,7 @@ document.addEventListener("DOMContentLoaded", function () {
       }
       else{
 	const styleSheet = document.getElementById('extrastyle').sheet;
-        styleSheet.insertRule('.recent-article { height: 40vw; }', styleSheet.cssRules.length);
+        styleSheet.insertRule('.recent-article { height: 24vw; }', styleSheet.cssRules.length);
       }
     });
   }
