@@ -412,6 +412,9 @@
       		transition: transform 0.3s ease-in-out;
 		text-align:center;
 		border:1px solid teal;
+		.recent-article:hover{
+		transform:scale(1.05);
+		}
 		}
 		.article{
 		background-color:white;
@@ -488,6 +491,8 @@
 		flex-direction:column;
 		font-size:20px;
 		line-height:0.2;
+		border:1px solid teal;
+		transform: scale(1.05);
 		}
 		}
 
