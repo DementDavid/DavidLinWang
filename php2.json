@@ -1,9 +1,16 @@
 [
-	
+	{
+        "title": "Merry Xmas 2023",
+        "link": "https://dementdavid.github.io/DavidLinWang.github.io/Posts/Merry Xmas2023.html",
+        "date": "25-12-2023",
+        "description": "slfsflsfjs",
+	"category":"Artwork",
+	"imageURL":"https://dementdavid.github.io/DavidLinWang.github.io/images/Invernal%20Crystal.jpg"
+    },
 	{
         "title": "Update 1.2",
         "link": "https://dementdavid.github.io/DavidLinWang.github.io/Posts/Update1_2.html",
-        "date": "?-11-2023",
+        "date": "20-11-2023",
         "description": "slfsflsfjs",
 	"category":"Updates",
 	"imageURL":"https://dementdavid.github.io/DavidLinWang.github.io/images/Leafilly.jpg"
