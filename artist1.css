@@ -410,9 +410,8 @@
      		overflow: hidden;
       		cursor: pointer;
       		transition: transform 0.3s ease-in-out;
-      		aspect-ratio: 1 / 1;
-		height:10vw;
 		text-align:center;
+		border:1px solid teal;
 		}
 		.article{
 		background-color:white;
