@@ -412,6 +412,7 @@
       		transition: transform 0.3s ease-in-out;
 		text-align:center;
 		border:1px solid teal;
+		}
 		.recent-article:hover{
 		transform:scale(1.05);
 		}
