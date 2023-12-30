@@ -1,50 +1,4 @@
-        //Article's table
-        /*const articles = [
-		{
-        title: "&#127875;&#127875; Happy Halloween 2023",
-        link: "https://dementdavid.github.io/DavidLinWang.github.io/Posts/HappyHalloween2023.html",
-        date: "31-10-2023",
-        description: "slfsflsfjs",
-	category:"Post"
-    },
-		{
-        title: "Update 1.1",
-        link: "https://dementdavid.github.io/DavidLinWang.github.io/Posts/Update1_1.html",
-        date: "25-10-2023",
-        description: "slfsflsfjs",
-	category:"Updates"
-    },
-    	{
-        title: "Autumn is here",
-        link: "https://dementdavid.github.io/DavidLinWang.github.io/Posts/Autumn is here.html",
-        date: "17-10-2023",
-        description: "slfsflsfjs",
-	category:"Artwork"
-    },
-	     {
-        title: "Quasar",
-        link: "https://dementdavid.github.io/DavidLinWang.github.io/Posts/Quasar.html",
-        date: "11-10-2023",
-        description: "slfsflsfjs",
-	category:"Artwork"
-    },
-    {
-        title: "Release 1.0 patch notes",
-        link: "https://dementdavid.github.io/DavidLinWang.github.io/Release1_0.html",
-        date: "27-09-2023",
-        description: "slfsflsfjs",
-	category:"Updates"
-    },
-    {
-        title: "Website is now live",
-        link: "https://dementdavid.github.io/DavidLinWang.github.io/Website%20is%20now%20live.html",
-        date: "24-09-2023",
-        description: "slfsflsfjs",
-	category:"Post"
-    },
-        ];
-	*/
-	let articles; // Declare articles in the global scope
+let articles; // Declare articles in the global scope
 
 document.addEventListener("DOMContentLoaded", function () {
   const articlesContainer = document.getElementById('articles');
@@ -95,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function () {
       }
       else{
 	const styleSheet = document.getElementById('extrastyle').sheet;
-        styleSheet.insertRule('.recent-article { height: 24vw; }', styleSheet.cssRules.length);
+        /*styleSheet.insertRule('.recent-article { height: 24vw; }', styleSheet.cssRules.length);*/
       }
     });
   }
