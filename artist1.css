@@ -83,9 +83,9 @@
 	        }
 		.grid-item a{
 		display: inline-block;
-      		margin: 2px;
-      		text-decoration: none;
-      		width: 15%; /* Ensure the anchor tag takes up 30% width of its container */	
+      	margin: 2px;
+      	text-decoration: none;
+      	width: 15%; /* Ensure the anchor tag takes up 30% width of its container */	
 		}
 		.grid-item img {	 
 		width:100%;
@@ -208,6 +208,7 @@
       		align-items: center;
       		justify-content: center;
       		text-align: center;
+			z-index:1;
     		}
 		#enciclopedy-button:hover::after {
       		content: attr(title);
@@ -432,10 +433,10 @@
 		}
 		.recent-article {
 		border: 1px solid #ddd;
-      		border-radius: 8px;
-     		overflow: hidden;
-      		cursor: pointer;
-      		transition: transform 0.3s ease-in-out;
+      	border-radius: 8px;
+     	overflow: hidden;
+      	cursor: pointer;
+      	transition: transform 0.3s ease-in-out;
 		text-align:center;
 		border:1px solid teal;
 		}
@@ -491,11 +492,6 @@
 		text-align: center;
 		top:0;
 		border:solid #055041 1px;
-		height:19vw;
-		display:flex;
-		justify-content:center;
-		align-items:center;
-		flex-direction:column;
 		font-size:20px;
 		line-height:0.2;
 		border:1px solid teal;
