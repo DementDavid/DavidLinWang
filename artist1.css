@@ -77,8 +77,20 @@
 		font-size:30px;
 		}
 		.grid-item {
-		float:left;
+		padding:10px 37px;
+		display:flex;
+		flex-wrap:wrap;
 	        }
+		.grid-item a{
+		display: inline-block;
+      		margin: 2px;
+      		text-decoration: none;
+      		width: 15%; /* Ensure the anchor tag takes up 30% width of its container */	
+		}
+		.grid-item img {	 
+		width:100%;
+	    height:auto;
+        }
 		.contents {
        		 flex: 1;
 		min-height:120vw;
@@ -356,6 +368,7 @@
 		.grid-container {
 		display: flex;
 		width:100%;
+		gap:10px;
 		}
 		.mobile-menu-button {
 		display: none; 
