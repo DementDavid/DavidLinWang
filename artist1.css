@@ -1,5 +1,6 @@
 		@import "special-1.css";
 		@import "enciclopedy.css";
+                @import "image_layout.css";
 		*{
 		text-decoration:none;
 		color:#002e4d;
