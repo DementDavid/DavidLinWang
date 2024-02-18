@@ -1,6 +1,7 @@
 		@import "special-1.css";
 		@import "enciclopedy.css";
-                @import "image_layout.css";
+		@import "image_layout.css";
+		@import "slideshow.css";
 		*{
 		text-decoration:none;
 		color:#002e4d;
@@ -79,15 +80,7 @@
 		}
 		.grid-item {
 		padding:10px 37px;
-		display:flex;
-		flex-wrap:wrap;
-	        }
-		.grid-item a{
-		display: inline-block;
-      	margin: 2px;
-      	text-decoration: none;
-      	width: 15%; /* Ensure the anchor tag takes up 30% width of its container */	
-		}
+	    }
 		.grid-item img {	 
 		width:100%;
 	    height:auto;
@@ -198,7 +191,7 @@
       		left: 10px;
       		width: 80px;
       		height: 80px;
-      		background-image: url('Shui he Tian.png'); 
+      		background-image: url('Img/The summoning.jpg'); 
       		background-size: cover;
       		background-position: center;
       		background-repeat: no-repeat;
@@ -372,6 +365,10 @@
 		width:100%;
 		gap:10px;
 		}
+		.grid-item{
+		display:flex;
+		flex-wrap:wrap;
+		}
 		.mobile-menu-button {
 		display: none; 
 		}
@@ -443,6 +440,12 @@
 		}
 		.recent-article:hover{
 		transform:scale(1.05);
+		}
+		.grid-item a{
+		display: inline-block;
+		margin: 2px;
+		text-decoration: none;
+		width: 15%; /* Ensure the anchor tag takes up 30% width of its container */	
 		}
 		}
 		@media (max-width: 769px) {
