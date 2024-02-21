@@ -14,7 +14,7 @@
 	<title>David Lin Wang</title>
 	<style>
 		
-       		@media (min-width: 769px){
+       	@media (min-width: 769px){
 		.container{
 		overflow:hidden;
 		display:flex;
@@ -43,18 +43,15 @@
 		flex: 1;
 		}
 		.za{
-		background-color:white;
-		border: 1px solid teal;
+		background:linear-gradient(162deg, rgba(-40, -112, 124, -14.3), rgba(-42, 173, 217, 0.2) 30%, rgba(134, 226, 227, 0.3) 80%);
 		border-radius:3vw;
 		width:70%;
 		padding:5vw;
 		overflow:hidden;
 		margin-right:3vw;
 		align-items:center;
+		box-shadow:0 0 20px rgb(123 196 255);
 		}
-		img{
-		max-width:200px;
-		}	
 		}
 		@media (max-width: 769px){
 		.sidebar{
@@ -62,12 +59,12 @@
 		flex: 1;
 		}
 		.za{
-		background-color:white;
-		border: 1px solid teal;
+		background:linear-gradient(162deg, rgba(-40, -112, 124, -14.3), rgba(-42, 173, 217, 0.2) 30%, rgba(134, 226, 227, 0.3) 80%);
 		border-radius:3vw;
 		font-size:5vw;
 		overflow:hidden;
 		align-items:center;
+		box-shadow:0 0 20px rgb(123 196 255);
 		}
 		}
 		.topnav a.active{
@@ -135,12 +132,36 @@
 		
 	</header>
 		<body>
+			<div class="slideshow-container">
+				<div class="slide">
+				  <img src="images/Enciclopedy is here!!.jpg" class="slide_img" alt="Slide 1">
+				</div>
+				<div class="slide">
+				  <img src="images/Enciclopedy is here!!.jpg" class="slide_img" alt="Slide 2">
+				</div>
+				<div class="slide">
+				  <img src="images/Enciclopedy is here!!.jpg" class="slide_img" alt="Slide 3">
+				</div>
+				<div class="slide">
+				  <img src="images/Enciclopedy is here!!.jpg" class="slide_img" alt="Slide 4">
+				</div>
+			  
+				<div class="dot-container">
+				  <span class="dot"></span>
+				  <span class="dot"></span>
+				  <span class="dot active"></span>
+				  <span class="dot"></span>
+				</div>
+			  
+				<button class="arrow prev" onclick="plusSlides(-1)">&#10094;</button>
+				<button class="arrow next" onclick="plusSlides(1)">&#10095;</button>
+			  </div>
 		<button id="enciclopedy-button" title="Go to Enciclopedy">
 		</button>
 		<p style="font-size: 67px;text-align:center;">WELCOME</p>
 		<div class="container">
 			<div class="za">
-				<article style="font-size:50px;color#006f6f;">LAST ILLUSTRATIONS</article>
+				<article style="font-size:50px;color#006f6f;text-align:center;">LAST ILLUSTRATIONS</article>
 				<div class="pyramid">
 					<div class="row">
 						<a href="https://dementdavid.github.io/DavidLinWang.github.io/images/Donnès.jpg">
@@ -164,8 +185,8 @@
 				</div>
 				<div class="recent-articles">
 				</div>
-					<ul class="lastArticles" id="listeArticles"></ul>
-				</div>
+				<ul class="lastArticles" id="listeArticles"></ul>
+			</div>
 		</div>
 		</main>
 			<script src="lastposts.php"></script>
@@ -198,6 +219,7 @@
 			</footer>
 			<script src="update.js"></script>
 			<script src="enciclopedyportal.js"></script>
+			<script src="slideshow.js"></script>
 		</body>
 </html>
 	
