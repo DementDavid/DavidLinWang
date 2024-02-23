@@ -275,7 +275,7 @@
         	}
 	    	.mobile-menu {
             	display: none;
-           	background:linear-gradient(to right, #b3f0ff, #0099cc 30%, #efebc2 80%);
+           	background:linear-gradient(162deg, rgba(-40, -112, 124, -14.3), rgba(-42, 173, 217, 0.75) 30%, rgba(134, 226, 227, 0.45) 80%);
             	position: absolute;
             	top: 100px;
             	left: 0;
