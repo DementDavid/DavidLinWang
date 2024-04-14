@@ -30,15 +30,19 @@ document.addEventListener("DOMContentLoaded", function () {
       articleImage.src = article.imageURL;
       articleDiv.appendChild(articleImage);
 
+      const articleText = document.createElement('div');
+      articleDiv.className = 'article-text';
+      articleDiv.appendChild(articleText);
+
       const a = document.createElement('a');
       a.href = article.link;
       a.textContent = article.title;
-      articleDiv.appendChild(a);
+      articleText.appendChild(a);
 
       const articleDate = document.createElement('p');
       articleDate.className = 'date';
       articleDate.textContent = article.date;
-      articleDiv.appendChild(articleDate);
+      articleText.appendChild(articleDate);
 
       recentArticlesContainer.appendChild(articleDiv);
 
