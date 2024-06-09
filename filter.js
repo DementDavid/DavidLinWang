@@ -25,13 +25,13 @@ document.addEventListener("DOMContentLoaded", function () {
       const articleDiv = document.createElement('div');
       articleDiv.className = 'recent-article';
 
-      const articleImage = document.createElement('img')
+      const articleImage = document.createElement('img');
       articleImage.className = 'image';
       articleImage.src = article.imageURL;
       articleDiv.appendChild(articleImage);
 
       const articleText = document.createElement('div');
-      articleDiv.className = 'article-text';
+      articleText.className = 'article-text';
       articleDiv.appendChild(articleText);
 
       const a = document.createElement('a');
