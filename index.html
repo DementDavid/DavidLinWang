@@ -3,7 +3,7 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width ,  initial-scale=1.0, user-scalable=yes">
+		<meta name="viewport" content="width=device-width , initial-scale=1.0">
 		<meta name="keywords" content="art, digitalart, illustrations, David, David Lin Wang, blog">
 		<meta name="author" content="David Lin Wang">
 		<meta name="description" content="Hello, my name is David Lin Wang, a digital artist.Welcome to my page.">
@@ -14,55 +14,31 @@
 	<title>David Lin Wang</title>
 	<style>
 		
-       	@media (min-width: 769px){
 		.container{
 		overflow:hidden;
 		display:flex;
 		margin-top:3vw;
 		margin-bottom:3vw;
 		}
-		}
-		@media (max-width: 769px){
-		.container{
-		overflow:hidden;
-		margin-top:3vw;
-		margin-bottom:3vw;
-		padding:23px;
-		}
-		}
 		.container::after {
 		content: "";
 		clear: both;
 		display: table;
 		}
-		@media (min-width: 769px){
 		.sidebar{
 		width: 30%;
 		float: left;
 		top: 0;
 		flex: 1;
 		}
+		@media (min-width:770px){
 		.za{
-		background:linear-gradient(162deg, rgba(-40, -112, 124, -14.3), rgba(-42, 173, 217, 0.2) 30%, rgba(134, 226, 227, 0.3) 80%);
+		background:linear-gradient(162deg, rgba(-40, -97, 124, -14.3), rgba(8, 173, 217, 4.2) 30%, rgba(134, 226, 227, 7.3) 80%);
 		border-radius:3vw;
 		width:70%;
 		padding:5vw;
 		overflow:hidden;
 		margin-right:3vw;
-		align-items:center;
-		box-shadow:0 0 20px rgb(123 196 255);
-		}
-		}
-		@media (max-width: 769px){
-		.sidebar{
-		top: 0;
-		flex: 1;
-		}
-		.za{
-		background:linear-gradient(162deg, rgba(-40, -112, 124, -14.3), rgba(-42, 173, 217, 0.2) 30%, rgba(134, 226, 227, 0.3) 80%);
-		border-radius:3vw;
-		font-size:5vw;
-		overflow:hidden;
 		align-items:center;
 		box-shadow:0 0 20px rgb(123 196 255);
 		}
@@ -98,6 +74,47 @@
 		margin-top: -65px;
 		margin-left: -41px;
         }
+		.lastgallerytitle{
+		font-size:70px;
+		color:#006f6f;
+		text-align:center;
+		margin:0;
+		}
+		@media (max-width: 768px){
+		.sidebar{
+		top: 0;
+		flex: 1;
+		}
+		.za{
+		background:linear-gradient(162deg, rgba(-40, -97, 124, -14.3), rgba(8, 173, 217, 4.2) 30%, rgba(134, 226, 227, 7.3) 80%);
+		border-radius:3vw;
+		font-size:5vw;
+		overflow:hidden;
+		align-items:center;
+		box-shadow:0 0 20px rgb(123 196 255);
+		width:100%;
+		}
+		.container{
+		overflow:hidden;
+		margin-top:3vw;
+		margin-bottom:3vw;
+		padding:23px;
+		display:inline-block;
+		}
+		.lastgallerytitle{
+		    font-size: 40px;
+			color: #006f6f;
+			text-align: center;
+			margin: 0;
+			margin-top: 18px;
+			margin-left: 33px;
+			position: absolute;
+		}
+		}
+		p{
+		padding:0;
+		margin:0;
+		}
 	</style>
 	<script src="footer.js"></script>
 	<header>
@@ -105,12 +122,12 @@
 		<div class="socialtop">
 					<a href="https://www.instagram.com/dement__david/">
 						<div>
-							<img src="images/Insta icon.jpg" height="70vw" width="70vw" target="blank" alt=Instaicon.jpeg">
+							<img src="images/Insta icon.jpg" height="70vw" width="70vw" target="blank" alt="Instaicon.jpeg">
 						</div>
 					</a>
 					<a href="https://www.deviantart.com/dementdavid/">
 						<div>
-							<img src="images/deviantart icon.jpg" height="70vw" width="70vw" target="blank" alt=deviantarticon.jpeg">
+							<img src="images/deviantart icon.jpg" height="70vw" width="70vw" target="blank" alt="deviantarticon.jpeg">
 						</div>
 					</a>
 				</div>
@@ -140,6 +157,7 @@
 		
 	</header>
 		<body>
+			<div class="background"></div>
 			<div class="slideshow-container">
 				<div class="slide">
 				  <img src="images/Enciclopedy is here!!.jpg" class="slide_img" alt="Slide 1">
@@ -170,7 +188,7 @@
 		<div class="container">
 			<div class="za">
 				<span class="bookmark"></span>
-				<article style="font-size:70px;color:#006f6f;text-align:center;margin:0;">LAST ILLUSTRATIONS</article>
+				<article class="lastgallerytitle">LAST ILLUSTRATIONS</article>
 				<div class="pyramid">
 					<div class="row">
 						<a href="https://dementdavid.github.io/DavidLinWang.github.io/images/Donnès.jpg">
