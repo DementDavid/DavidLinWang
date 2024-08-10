@@ -55,7 +55,7 @@ margin:0;
 }
 .background{
 z-index:-1;
-background-image:url('images/pagebackground.jpg');
+background-image:url('pagebackground.jpg');
 background-size: cover;
 position: fixed; 
 top: 0;
@@ -425,6 +425,7 @@ width:100%;
 border:solid 1px #b3f0ff;
 }
 .recent-article {
+background:linear-gradient(162deg, rgba(-40, -112, 124, -14.3), rgb(136 226 249 / 75%) 30%, rgb(238 255 255 / 45%) 80%);
 box-shadow: 0 0 20px rgb(123 196 255);
   border-radius: 8px;
  overflow: hidden;
@@ -487,8 +488,8 @@ background-color:white;
 text-align:center;
 }
 .recent-article {
-background:linear-gradient(162deg, rgba(-40, -112, 124, -14.3), rgba(-42, 173, 217, 0.75) 30%, rgba(134, 226, 227, 0.45) 80%);
-box-shadow:0 0 20px rgb(123 196 255);
+background:linear-gradient(162deg, rgba(-40, -112, 124, -14.3), rgb(136 226 249 / 75%) 30%, rgb(238 255 255 / 45%) 80%);
+box-shadow: 0 0 20px rgb(123 196 255);
 text-decoration:none;
 color: white;
 text-align: center;
@@ -496,6 +497,7 @@ top:0;
 font-size:20px;
 line-height:0.2;
 transform: scale(1.05);
+line-height:1;
 }
 }
 
