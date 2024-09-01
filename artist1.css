@@ -2,6 +2,7 @@
 @import "enciclopedy.css";
 @import "image_layout.css";
 @import "slideshow.css";
+@import "comments.css";
 *{
 text-decoration:none;
 color:#002e4d;
@@ -92,6 +93,8 @@ height:auto;
 box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5),
 			-5px -5px 15px rgba(255, 255, 255, 0.8); 
 padding:10px;
+flex:none;
+object-fit:contain;
 }
 .contents {
 		flex: 1;
@@ -238,7 +241,6 @@ left: 10px;
 .article{
 background-color:white;
 margin-left:200px;
-margin-bottom:63px;
 margin-right:200px;
 margin-top:60px;
 border-radius:3px;
@@ -505,7 +507,3 @@ line-height:1;
 height:100px;
 }
 }
-
-
-
-

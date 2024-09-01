@@ -7,7 +7,7 @@
 		<meta name="keywords" content="art, digitalart, illustrations">
 		<meta name="author" content="David Lin Wang">
 		<meta name="description" content="Welcome to my page.">
-		<link rel="icon" type="image/png" href="Img/The summoning.jpg">
+		<link rel="icon" type="image/png" href="Shui he Tian.png">
 		<link rel="stylesheet" href="artist1.css">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	</head>
@@ -43,15 +43,17 @@
 		}
 		.outer-box {
             width: 350px;
-            padding: 5px;
+            padding: 20px;
             background-color: #e0e0e0;
-            border: 2px solid #cccccc;
+            border:3px solid #69b5ff;
             box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
             margin: 50px auto;
             position: relative;
             border-radius: 10px;
             text-align: center;
 			height:50%;
+			background-image: url('images/AQ title frame.jpg');
+			background-size:cover;
         }
         .inner-box {
             width: 200px;
@@ -63,7 +65,29 @@
             margin: 0 auto;
             border-radius: 10px;
 			height:100%;
-			width:100%
+			width:100%;
+        }
+		.webcomic-title{
+		align-items:center;
+		margin-top:20vh;
+		font-size:40px;
+		
+		}
+		 .dynamiclogo {
+            width: 100%;
+            padding: 20px;
+            background-image: url('images/AQ Logo Color.jpg');
+			background-size:cover;
+            border: 5px double #69b5ff;
+            box-shadow: inset 3px 3px 10px rgba(0, 0, 0, 0.2), 
+                        inset -3px -3px 10px rgba(255, 255, 255, 0.7);
+            margin: 0 auto;
+            border-radius: 50%;
+			top: -13%;
+			left: 28%;
+			height:150px;
+			width:150px;
+			position:absolute;
         }
 	</style>
 	<script src="footer.js"></script>
@@ -115,7 +139,10 @@
 			<div class="grid-container">
 				<div class="grid-item">
 					<div class="outer-box">
-						<article class="webcomic inner-box">Webcomic(coming soon)</article>
+						<div class="dynamiclogo"></div>
+						<div class="webcomic inner-box">
+							<p class="webcomic-title">Webcomic(coming soon)</p>
+						</div>
 					</div>
 				</div>
 			</div>
