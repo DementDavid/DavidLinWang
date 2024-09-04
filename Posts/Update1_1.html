@@ -92,12 +92,19 @@
 				<a href="https://dementdavid.github.io/DavidLinWang.github.io/blog.html" class="button">Return to all articles</a>
 			</div>
 		</aside>
-		<div class="comment-box">
-			<div class="comment-inner-box">
-				<div class="comment-title">COMMENTS</div>
-				 <textarea id="comment" placeholder="Write your comment here..."></textarea>
-				 <button type="submit">Submit</button>
+		<form id="commentForm" action="post_comment.php" method="post">
+			<div class="comment-box">
+				<div class="comment-inner-box">
+					<div class="comment-title">COMMENTS</div>
+					 <textarea id="comment" name="comment" placeholder="Write your comment here..." required></textarea><br>
+					 <input type="text" name="username" placeholder="Your Name" required><br>
+					<button type="submit">Submit</button>
+				</div>
 			</div>
+		</form>
+		 <h2>Comments:</h2>
+		<div id="commentSection">
+        <!-- Comments will be loaded here -->
 		</div>
 		<footer>
 				<p>David Lin Wang &copy All the rights reserved 2023</p>
