@@ -267,8 +267,8 @@ left: 10px;
 	}
 .image{
  width: 100%;
-	  height: 80%; 	
-	  object-fit: cover;
+  height: 25vw; 	
+  object-fit: cover;
 }
 .article{
 background-color:white;
@@ -392,6 +392,9 @@ font-size:20px;
 padding:20px;
 margin:0;
 }
+.image{
+  height: 45vw; 	
+}
 }
 @media (min-width: 769px) {
 .grid-container {
@@ -464,15 +467,17 @@ width:100%;
 border:solid 1px #b3f0ff;
 }
 .recent-article {
-background:linear-gradient(162deg, rgba(-40, -112, 124, -14.3), rgb(136 226 249 / 75%) 30%, rgb(238 255 255 / 45%) 80%);
+background: linear-gradient(162deg, rgba(-40, -112, 124, -14.3), rgb(136 226 249 / 75%) 30%, rgb(238 255 255 / 45%) 80%);
 box-shadow: 0 0 20px rgb(123 196 255);
-  border-radius: 8px;
- overflow: hidden;
-  cursor: pointer;
-  transition: transform 0.3s ease-in-out;
-text-align:center;
-line-height:45px;
-font-size:30px;
+border-radius: 8px;
+overflow: hidden;
+cursor: pointer;
+transition: transform 0.3s ease-in-out;
+text-align: center;
+line-height: 45px;
+font-size: 30px;
+z-index: 1;
+position: relative;
 }
 .recent-article:hover{
 transform:scale(1.05);
