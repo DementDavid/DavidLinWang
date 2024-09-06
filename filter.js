@@ -24,15 +24,19 @@ document.addEventListener("DOMContentLoaded", function () {
     filteredArticles.slice(startArticleIndex, endArticleIndex).forEach(article => {
       const articleDiv = document.createElement('div');
       articleDiv.className = 'recent-article';
+	  
+	   const articleCard = document.createElement('div');
+      articleCard.className = 'article-card';
+	  articleDiv.appendChild(articleCard)
 
-      const articleImage = document.createElement('img');
+      const articleImage = document.createElement('img')
       articleImage.className = 'image';
       articleImage.src = article.imageURL;
-      articleDiv.appendChild(articleImage);
+      articleCard.appendChild(articleImage);
 
       const articleText = document.createElement('div');
-      articleText.className = 'article-text';
-      articleDiv.appendChild(articleText);
+      articleDiv.className = 'article-text';
+      articleCard.appendChild(articleText);
 
       const a = document.createElement('a');
       a.href = article.link;
