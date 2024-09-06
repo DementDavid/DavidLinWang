@@ -144,6 +144,7 @@ background-color: aqua;
 opacity:0.5;
 z-index: 0;
 transition: bottom 0.5s ease;
+pointer-events: none;
 }
 
 .recent-article:hover::before {
