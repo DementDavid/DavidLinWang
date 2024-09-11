@@ -10,8 +10,11 @@ color:#002e4d;
 font-style:italic;
 box-sizing: border-box;
 }
+.presentation{
+background:linear-gradient(180deg, #154c5f, #298daf 59%, #41bae3 80%);
+}
 .topnav {
-background:linear-gradient(180deg, #86e2e3, #86e2e3, #86e2e3 80%);
+background:linear-gradient(180deg, #41bae3, #60d4fb, #a4f4f5 80%);
 font-size:20px;
 width:100%;
 height:85px;
@@ -350,6 +353,9 @@ font-size:50px;
 color:white;
 }
 @media (max-width: 768px) {
+.topnav {
+	height:12vw;
+}
 .grid-container {
 width:100%;
 gap:10px;
@@ -379,13 +385,13 @@ width:2rem;
 height:auto;
 }
 .presentation{
-background:linear-gradient(180deg, #24809f, #2aadd9 30%, #86e2e3 80%);
-font-size:5vw;
-margin-top:0;
-margin-right: 0;
-margin-left: 0;
-margin-bottom:0vw;
-width:100%;
+font-size: 10vw;
+margin-top: 0;
+        margin-right: 0;
+        margin-left: 0;
+        margin-bottom: 0vw;
+        width: 100%;
+height:20vw
 }
 .article{
 background-color:white;
@@ -462,7 +468,6 @@ height:auto;
 text-align:center;
 }
 .presentation{
-background:linear-gradient(180deg, #24809f, #2aadd9 30%, #86e2e3 80%);
 font-size:5vw;
 text-align:center;
 margin-top:0;
@@ -470,7 +475,7 @@ margin-right: 0;
 margin-left: 0;
 margin-bottom: 0vw;
 width:100%;
-border-bottom:solid 4px #24809f;
+border-bottom:double 1px #24809f;
 }
 .recent-article {
 background: linear-gradient(162deg, rgba(-40, -112, 124, -14.3), rgb(136 226 249 / 75%) 30%, rgb(238 255 255 / 45%) 80%);
