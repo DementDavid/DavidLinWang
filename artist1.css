@@ -3,6 +3,7 @@
 @import "image_layout.css";
 @import "slideshow.css";
 @import "comments.css";
+@import "resources.css";
 *{
 text-decoration:none;
 color:#002e4d;
@@ -10,7 +11,7 @@ font-style:italic;
 box-sizing: border-box;
 }
 .topnav {
-background:linear-gradient(162deg, #4d8491, #2aadd9 30%, #86e2e3 80%);
+background:linear-gradient(180deg, #86e2e3, #86e2e3, #86e2e3 80%);
 font-size:20px;
 width:100%;
 height:85px;
@@ -56,7 +57,7 @@ margin:0;
 }
 .background{
 z-index:-1;
-background-image:url('images/pagebackground.jpg');
+background-image:url('images/pagebackground2.jpg');
 background-size: cover;
 position: fixed; 
 top: 0;
@@ -72,7 +73,7 @@ color:#002e4d;
 }
 footer {
 flex-shrink: 0;
-background:linear-gradient(162deg, #4d8491, #2aadd9 30%, #86e2e3 80%);
+background:linear-gradient(180deg, #24809f, #2aadd9 30%, #86e2e3 80%);
 text-align: center;
 padding: 20px;
 font-size:1.5rem;
@@ -271,6 +272,10 @@ left: 10px;
   height: 25vw; 	
   object-fit: cover;
 }
+.grid-item{
+width: fit-content;
+height: fit-content;
+}
 .article{
 background-color:white;
 margin-left:200px;
@@ -374,7 +379,7 @@ width:2rem;
 height:auto;
 }
 .presentation{
-background:linear-gradient(162deg, #4d8491, #2aadd9 30%, #86e2e3 80%);
+background:linear-gradient(180deg, #24809f, #2aadd9 30%, #86e2e3 80%);
 font-size:5vw;
 margin-top:0;
 margin-right: 0;
@@ -457,7 +462,7 @@ height:auto;
 text-align:center;
 }
 .presentation{
-background:linear-gradient(162deg, #4d8491, #2aadd9 30%, #86e2e3 80%);
+background:linear-gradient(180deg, #24809f, #2aadd9 30%, #86e2e3 80%);
 font-size:5vw;
 text-align:center;
 margin-top:0;
@@ -465,7 +470,7 @@ margin-right: 0;
 margin-left: 0;
 margin-bottom: 0vw;
 width:100%;
-border:solid 1px #b3f0ff;
+border-bottom:solid 4px #24809f;
 }
 .recent-article {
 background: linear-gradient(162deg, rgba(-40, -112, 124, -14.3), rgb(136 226 249 / 75%) 30%, rgb(238 255 255 / 45%) 80%);
@@ -479,6 +484,7 @@ line-height: 45px;
 font-size: 30px;
 z-index: 1;
 position: relative;
+border:1px solid teal;
 }
 .recent-article:hover{
 transform:scale(1.05);

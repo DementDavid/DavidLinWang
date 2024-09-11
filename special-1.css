@@ -9,10 +9,12 @@ background:aqua;
 transition :background-color 0.3s;
 }
 .button{
-  background: linear-gradient(to right, #b3f0ff , #2196F3 80%);
-  font-size:30px;
-  border:1px solid teal;
-  border-radius:10px;
+    background: linear-gradient(to right, #b3f0ff, #2196F3 80%);
+    font-size: 30px;
+    border: 1px solid teal;
+    border-top: hidden;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 .button a:hover{
   background-color:white;
@@ -25,7 +27,7 @@ transition :background-color 0.3s;
 	.square {
 	width: 10%;
 	height:70px;
-	background: linear-gradient(to right, #b3f0ff , #2196F3 80%);
+	background-color: #2196f3;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -42,19 +44,23 @@ transition :background-color 0.3s;
 	color:teal;
 	}
 .hightlight{
-background:#c6f3e4;
+  background:#c6f3e4;
+}
 
-
-.left {
+ .left {
     border-right: 2px solid #fff;
 	border-radius:10px;
 	margin:0;
+	border-bottom-left-radius: 0; 
+    border-bottom-right-radius: 0; 
 }
 
 .right {
     border-left: 2px solid #fff;
 	border-radius:10px;
 	margin:0;
+	border-bottom-left-radius: 0; 
+    border-bottom-right-radius: 0; 
 }
 #enciclopedy-button {
       position: fixed;
@@ -62,7 +68,7 @@ background:#c6f3e4;
       left: 10px;
       width: 50px;
       height: 50px;
-      background-image: url('Shui he Tian.png'); 
+      background-image: url('Img/The summoning.jpg'); 
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
