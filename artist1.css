@@ -60,7 +60,7 @@ margin:0;
 }
 .background{
 z-index:-1;
-background-image:url('images/pagebackground2.jpg');
+background-image:url('images/pagebackground.jpg');
 background-size: cover;
 position: fixed; 
 top: 0;
@@ -238,7 +238,7 @@ border-radius:10px;
 	  left: 10px;
 	  width: 80px;
 	  height: 80px;
-	  background-image: url('Shui\ he\ Tian.png'); 
+	  background-image: url('images/AqBackground.jpg'); 
 	  background-size: cover;
 	  background-position: center;
 	  background-repeat: no-repeat;
