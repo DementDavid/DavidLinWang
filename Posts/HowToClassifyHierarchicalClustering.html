@@ -10,7 +10,7 @@
 		<link rel="stylesheet" href="../artist1.css">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	</head>
-	<title>How to Classify Images using Hierarchical Clustering</title>
+	<title>Autumn is here</title>
 	<style>
 		main{
 		font-family:roboto;
@@ -42,6 +42,10 @@
             font-family: 'Courier New', Courier, monospace;
 			font-size:18px;
         }
+		.image-post{
+		    height: 32vw;
+    		object-fit: cover;
+		}
 	</style>
 	<script src="footer.js"></script>
 	<header>
@@ -96,11 +100,25 @@
         			<div class="article">
 					<p style="color:#a50606; font-size:30px; text-align:center;">Category: Tutorial</p>
 					<p style="color:#002e4d; font-size:60px; text-align:center;">How to classify your illustrations using Hierarchical Clustering</p>
-					<br class="alphatext sub">Hierarchical Clustering is a simple, intuitive yet powerful method in Machine Learning that allows you to build models that recoignizes similar patterns on a dataset of image</br>
-					from sklearn.cluster import AgglomerativeClustering
+					<br class="alphatext sub">Hierarchical Clustering is a simple, intuitive yet powerful method in Machine Learning that allows you to build models that recoignizes similar patterns on a dataset of images or text. This can help you to understand better the mood, balance and palette of your artworks.</br>
+					<br class="alphatext sub">First we need to load our dataset, I've done this by uploading a CSV file containing the URL path of all the images that I want to classify together with the features. The best thing is that we can customize how we want the features to be based on the artwork. (Es: we can determinate a scale of Greyscale that ranges from 0 to 1, 0 meaning total Black and 1 total White) </br>
+					
+			<pre><code>
+		imageClassifier.csv
+		Image_ID,Color_R,Color_G,Color_B,ColourDogde_UP1,ColourDogde_UP2,ColourDogde_UP3,ColourDogde_UP4,Hue,Saturation, composition_Level....
+		elevation.jpg,0.23,0.45,0.12,0.56,0.72,0.41,0.33,0.29,0.75, 0.34....
+		image2.jpg,0.56,0.32,0.78,0.44,0.38,0.89,0.65,0.21,0.54, 0.42....
+		image3.jpg,0.11,0.67,0.34,0.61,0.49,0.73,0.77,0.43,0.48, 0.23....
+		image4.jpg,0.88,0.54,0.27,0.39,0.21,0.60,0.53,0.62,0.35, 0.4....
+	</code></pre>
+	<br class="alphatext sub">We train then asimple Clustering model on Google Colab:</br>
 <pre><code>
+	from sklearn.cluster import AgglomerativeClustering
 	from scipy.cluster.hierarchy import dendrogram, linkage
 	import matplotlib.pyplot as plt
+	import pandas as pd
+	#Importing the image dataset
+	df = pd.read_csv('imageClassifier.csv')
 	Z = linkage(features_list, method='ward')
 
 	# Dendogram
@@ -112,6 +130,10 @@
 	cluster = AgglomerativeClustering(n_clusters=5, affinity='euclidean', linkage='ward')
 	cluster_labels = cluster.fit_predict(features_list)
 	</code></pre>
+	<br class="alphatext sub">Example Output:</br>
+	<p class="alphatext sub">This Illustration(elevation.jpg) was very bright compared to other images of the same dataset. Of the scale of ColourDogde, this had 0.82 while others had like 0.55 .</p>
+	
+	<img class="image-post" src="../images/Elevation.jpg">
 					<div style="margin:300px;"></div>	
 					<div class="alphatext publish">Published:17 October 2023</div>
 				</div>
