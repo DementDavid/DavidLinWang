@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width ,  initial-scale=1, user-scalable=yes">
+		<meta name="keywords" content="art, digitalart, illustrations">
+		<meta name="author" content="David Lin Wang">
+		<meta name="description" content="Welcome to my page.">
+		<link rel="icon" type="image/png" href="../Img/The summoning.jpg">
+		<link rel="stylesheet" href="../artist1.css">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	</head>
+	<title>How to Classify Images using Hierarchical Clustering</title>
+	<style>
+		main{
+		font-family:roboto;
+		background-color:white;
+		margin:20px;
+		border-radius:10px;
+		min-height:1200px;
+		}
+		.topnav a.active{
+		background-color:white;
+		}
+		img.centered{
+		 display: block;
+           	margin: 0 auto;
+            	max-width: 100%;
+           	height: auto;
+		padding:20px;
+        	}
+			 pre {
+            background-color: #f4f4f4;
+            border: 1px solid #ddd;
+            padding: 10px;
+            overflow: auto;
+			    height: 700px;
+			width: 80%;
+        }
+        code {
+            color: #002e5f;
+            font-family: 'Courier New', Courier, monospace;
+			font-size:18px;
+        }
+	</style>
+	<script src="footer.js"></script>
+	<header>
+		<h1 class="presentation">DAVID LIN WANG</h1>
+		<div class="socialtop">
+					<a href="https://www.instagram.com/dement__david/">
+						<div>
+							<img src="../images/Insta icon.jpg" height="70vw" width="70vw" target="blank" alt="Instaicon.jpeg">
+						</div>
+					</a>
+					<a href="https://www.deviantart.com/dementdavid/">
+						<div>
+							<img src="../images/deviantart icon.jpg" height="70vw" width="70vw" target="blank" alt="deviantarticon.jpeg">
+						</div>
+					</a>
+				</div>
+
+		<!--Top banner-->
+		<div class="mobile-menu-button presentation">
+		<span></span>
+		<span></span>
+		<span></span>
+		</div>
+		 <nav class="topnav content desktop-menu">
+            <a href="../index.html">Home</a>
+            <a href="../Illustrations.html">Illustrations</a>
+            <a class="active" href="../blog.html">Blog</a>
+            <a href="../Webcomic.html">Webcomic</a>
+            <a href="../About.html">About</a>
+        </nav>
+
+
+    <!-- Menu mobile (Hidden by deffault) -->
+    <nav id="mobile-menu" class="mobile-menu">
+        <a href="../index.html">Home</a>
+        <a href="../Illustrations.html">Illustrations</a>
+        <a class="active" href="../blog.html">Blog</a>
+        <a href="../Webcomic.html">Webcomic</a>
+        <a href="../About.html">About</a>
+    </nav>
+		<!--Principal text of the home page-->
+		
+	</header>
+		<body>
+		<aside>
+			<div>
+					<div class="article-top-image">
+						<a href="../images/Computing.jpg">
+							<img class="article-top-image-img" src="../images/Computing.jpg" alt="Autumn is here" title="Autumn is here" class="centered">
+						</a>
+					</div>
+        			<div class="article">
+					<p style="color:#a50606; font-size:30px; text-align:center;">Category: Tutorial</p>
+					<p style="color:#002e4d; font-size:60px; text-align:center;">How to classify your illustrations using Hierarchical Clustering</p>
+					<br class="alphatext sub">Hierarchical Clustering is a simple, intuitive yet powerful method in Machine Learning that allows you to build models that recoignizes similar patterns on a dataset of image</br>
+					from sklearn.cluster import AgglomerativeClustering
+<pre><code>
+	from scipy.cluster.hierarchy import dendrogram, linkage
+	import matplotlib.pyplot as plt
+	Z = linkage(features_list, method='ward')
+
+	# Dendogram
+	plt.figure(figsize=(10, 7))
+	dendrogram(Z)
+	plt.show()
+
+	# Hierarchical Clustering
+	cluster = AgglomerativeClustering(n_clusters=5, affinity='euclidean', linkage='ward')
+	cluster_labels = cluster.fit_predict(features_list)
+	</code></pre>
+					<div style="margin:300px;"></div>	
+					<div class="alphatext publish">Published:17 October 2023</div>
+				</div>
+				</div>
+				<div class="returnall">
+					<a href="https://dementdavid.github.io/DavidLinWang.github.io/blog.html" class="button">Return to all articles</a>
+				</div>
+			</aside>
+		<footer>
+				<p>David Lin Wang &copy All the rights reserved 2023</p>
+				<p id="update">Webpage version:1.0</p>
+				<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"></a>
+				<br>The works are licensed under a</br>
+				<div class="cc">
+				<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><strong>Creative Commons Attribution 4.0 International License</strong></a>.
+				</div>
+				<br style="text-align:center";>More on:</br>
+				<div class="social">
+					<a href="https://www.instagram.com/dement__david/">
+						<div>
+							<img src="../images/Insta icon.jpg" height="70vw" width="70vw" target="blank" alt="Instaicon.jpeg" title="Instagram">
+						</div>
+					</a>
+					<a href="https://www.deviantart.com/dementdavid/">
+						<div>
+							<img src="../images/deviantart icon.jpg" height="70vw" width="70vw" target="blank" alt="deviantarticon.jpeg" title="Deviant art">
+						</div>
+					</a>
+				</div>
+			</footer>
+			<script src="../hamburger menu.js"></script>
+			<script src="../update.js"></script>
+		</body>
+</html>
