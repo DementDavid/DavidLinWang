@@ -490,9 +490,6 @@ z-index: 1;
 position: relative;
 border:1px solid teal;
 }
-.recent-article:hover{
-transform:scale(1.05);
-}
 .grid-item a{
 display: inline-block;
 margin: 2px;
