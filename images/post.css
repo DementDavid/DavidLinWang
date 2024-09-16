@@ -1,0 +1,13 @@
+:root{
+--font-size-big: 27px;
+--font-size-small: 18px;
+--font-color: 18px;
+}
+.pos-font{
+	    color: #002e4d;
+    font-size: var(--font-size-big);
+    text-align: center;
+}
+.sub2{
+font-size: var(--font-size-small);
+}

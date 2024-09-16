@@ -6,11 +6,12 @@
 		<meta name="keywords" content="art, digitalart, illustrations">
 		<meta name="author" content="David Lin Wang">
 		<meta name="description" content="Welcome to my page.">
-		<link rel="icon" type="image/png" href="../Img/The summoning.jpg">
+		<link rel="icon" type="image/png" href="../Shui he Tian.png">
 		<link rel="stylesheet" href="../artist1.css">
+		<link rel="stylesheet" href="../post.css">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	</head>
-	<title>How to classify Images using Hierarchical Clustering</title>
+	<title>How to use Hierarchical Clustering to classify Illustrations</title>
 	<style>
 		main{
 		font-family:roboto;
@@ -18,9 +19,6 @@
 		margin:20px;
 		border-radius:10px;
 		min-height:1200px;
-		}
-		.topnav a.active{
-		background-color:white;
 		}
 		img.centered{
 		 display: block;
@@ -34,7 +32,7 @@
             border: 1px solid #ddd;
             padding: 10px;
             overflow: auto;
-			    height: 700px;
+			    height:300px;
 			width: 80%;
         }
         code {
@@ -55,7 +53,6 @@
 	</style>
 	<script src="footer.js"></script>
 	<header>
-		<div class="background"></div>
 		<h1 class="presentation">DAVID LIN WANG</h1>
 		<div class="socialtop">
 					<a href="https://www.instagram.com/dement__david/">
@@ -106,7 +103,7 @@
 					</div>
         			<div class="article">
 					<p style="color:#a50606; font-size:30px; text-align:center;">Category: Tutorial</p>
-					<p style="color:#002e4d; font-size:60px; text-align:center;">How to classify your illustrations using Hierarchical Clustering</p>
+					<p class="pos-font">How to classify your illustrations using Hierarchical Clustering</p>
 					<br class="alphatext sub">Hierarchical Clustering is a simple, intuitive yet powerful method in Machine Learning that allows you to build models that recoignizes similar patterns on a dataset of images or text. This can help you to understand better the mood, balance and palette of your artworks.</br>
 					<br class="alphatext sub">First we need to load our dataset, I've done this by uploading a CSV file containing the URL path of all the images that I want to classify together with the features. The best thing is that we can customize how we want the features to be based on the artwork. (Es: we can determinate a scale of Greyscale that ranges from 0 to 1, 0 meaning total Black and 1 total White) </br>
 					
@@ -138,7 +135,7 @@
 	cluster_labels = cluster.fit_predict(features_list)
 	</code></pre>
 	<br class="alphatext sub">Example Output:</br>
-	<p class="alphatext sub">The Speedpainting(elevation.jpg) was very bright compared to other images of the same dataset. Its scale of Colour Dogde was of 0.82, very high compared to other(That had less than 0.60) </p>
+	<p class="alphatext sub2">The Speedpainting(elevation.jpg) was very bright compared to other images of the same dataset. Its scale of Colour Dogde was of 0.82, very high compared to other(That had less than 0.60) </p>
 	
 	<img class="image-post" src="../images/Elevation.jpg">
 					<div style="margin:300px;"></div>	

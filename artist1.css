@@ -359,6 +359,9 @@ width:100%;
 width: 1rem;
 height: auto;
 }
+.contents {
+         height: 3300px;
+	   }
 .presentation{
 font-size: 10vw;
 margin-top: 0;
@@ -380,7 +383,7 @@ padding:20px;
 margin:0;
 }
 .image{
-  height:56vw;;
+          height: 56vw;
    border-radius: 10px;
 }
 
@@ -501,9 +504,6 @@ width: 15%;
 h2{
 font-size:6vw;
 }
-.contents {
-	height: 3300px;
-  }
 .desktop-menu {
 display: block;
 }
