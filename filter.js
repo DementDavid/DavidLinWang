@@ -28,25 +28,27 @@ document.addEventListener("DOMContentLoaded", function () {
 	   const articleCard = document.createElement('div');
       articleCard.className = 'article-card';
 	  articleDiv.appendChild(articleCard)
+	  
+	  const a = document.createElement('a');
+      a.href = article.link;
+      a.textContent = article.title;
+      articleCard.appendChild(a);
 
       const articleImage = document.createElement('img')
       articleImage.className = 'image';
       articleImage.src = article.imageURL;
-      articleCard.appendChild(articleImage);
+      a.appendChild(articleImage);
 
       const articleText = document.createElement('div');
       articleText.className = 'article-text';
-      articleCard.appendChild(articleText);
+      a.appendChild(articleText);
 
-      const a = document.createElement('a');
-      a.href = article.link;
-      a.textContent = article.title;
-      articleText.appendChild(a);
+      
 
       const articleDate = document.createElement('p');
       articleDate.className = 'date';
       articleDate.textContent = article.date;
-      articleText.appendChild(articleDate);
+      a.appendChild(articleDate);
 
       recentArticlesContainer.appendChild(articleDiv);
 
