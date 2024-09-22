@@ -29,21 +29,21 @@ document.addEventListener("DOMContentLoaded", function () {
       articleCard.className = 'article-card';
 	  articleDiv.appendChild(articleCard)
 	  
-	  const a = document.createElement('a');
-      a.href = article.link;
-      a.textContent = article.title;
-      articleCard.appendChild(a);
 
       const articleImage = document.createElement('img')
       articleImage.className = 'image';
       articleImage.src = article.imageURL;
       a.appendChild(articleImage);
 
+      const a = document.createElement('a');
+      a.href = article.link;
+      a.textContent = article.title;
+      articleCard.appendChild(a);
+
+
       const articleText = document.createElement('div');
       articleText.className = 'article-text';
       a.appendChild(articleText);
-
-      
 
       const articleDate = document.createElement('p');
       articleDate.className = 'date';
