@@ -63,7 +63,25 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   }
+  // Function to set up pagination
+  function setupPagination(totalArticles) {
+    const paginationContainer = document.getElementById('pagination'); 
+    paginationContainer.innerHTML = ''; 
 
+    const totalPages = Math.ceil(totalArticles / maxArticlesPerPage);
+    
+    for (let i = 1; i <= totalPages; i++) {
+      const pageButton = document.createElement('button');
+      pageButton.textContent = i;
+      
+      pageButton.addEventListener('click', function() {
+        currentPage = i;
+        displayArticles();
+      });
+
+      paginationContainer.appendChild(pageButton);
+    }
+  }
   // Hearer of events
   categoryFilter.addEventListener('change', displayArticles);
 
