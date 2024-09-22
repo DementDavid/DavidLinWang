@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width ,  initial-scale=1, user-scalable=yes">
+		<meta name="keywords" content="art, digitalart, illustrations">
+		<meta name="author" content="David Lin Wang">
+		<meta name="description" content="Welcome to my page.">
+		<link rel="icon" type="image/png" href="../Shui he Tian.png">
+		<link rel="stylesheet" href="../artist1.css">
+		<link rel="stylesheet" href="../post.css">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	</head>
+	<title>The Blending Brush</title>
+	<style>
+		main{
+		font-family:roboto;
+		background-color:white;
+		margin:20px;
+		border-radius:10px;
+		min-height:1200px;
+		}
+		img.centered{
+		 display: block;
+           	margin: 0 auto;
+            	max-width: 100%;
+           	height: auto;
+		padding:20px;
+        	}
+			 pre {
+            background-color: #f4f4f4;
+            border: 1px solid #ddd;
+            padding: 10px;
+            overflow: auto;
+			    height:300px;
+			width: 80%;
+        }
+        code {
+            color: #002e5f;
+            font-family: 'Courier New', Courier, monospace;
+			font-size:18px;
+        }
+		.image-post{
+		    height: 32vw;
+    		object-fit: cover;
+		}
+		@media (max-width:769px){
+		.image-post{
+		    height: 45vw;
+    		object-fit: cover;
+		}
+		}
+	</style>
+	<script src="footer.js"></script>
+	<header>
+	<div class="background"></div>
+		<h1 class="presentation">DAVID LIN WANG</h1>
+		<div class="socialtop">
+					<a href="https://www.instagram.com/dement__david/">
+						<div>
+							<img src="../images/Insta icon.jpg" height="70vw" width="70vw" target="blank" alt="Instaicon.jpeg">
+						</div>
+					</a>
+					<a href="https://www.deviantart.com/dementdavid/">
+						<div>
+							<img src="../images/deviantart icon.jpg" height="70vw" width="70vw" target="blank" alt="deviantarticon.jpeg">
+						</div>
+					</a>
+				</div>
+
+		<!--Top banner-->
+		<div class="mobile-menu-button topnav">
+		<span></span>
+		<span></span>
+		<span></span>
+		</div>
+		 <nav class="topnav content desktop-menu">
+            <a href="../index.html">Home</a>
+            <a href="../Illustrations.html">Illustrations</a>
+            <a class="active" href="../blog.html">Blog</a>
+            <a href="../Webcomic.html">Webcomic</a>
+            <a href="../About.html">About</a>
+        </nav>
+
+
+    <!-- Menu mobile (Hidden by deffault) -->
+    <nav id="mobile-menu" class="mobile-menu">
+        <a href="../index.html">Home</a>
+        <a href="../Illustrations.html">Illustrations</a>
+        <a class="active" href="../blog.html">Blog</a>
+        <a href="../Webcomic.html">Webcomic</a>
+        <a href="../About.html">About</a>
+    </nav>
+		<!--Principal text of the home page-->
+		
+	</header>
+		<body>
+		<aside>
+			<div>
+					<div class="article-top-image">
+						<a href="../images/Computing.jpg">
+							<img class="article-top-image-img" src="../images/Computing.jpg" alt="Autumn is here" title="Autumn is here" class="centered">
+						</a>
+					</div>
+        			<div class="article">
+					<p style="color:#a50606; font-size:30px; text-align:center;">Category: Tutorial</p>
+					<p class="pos-font">The Blending Brush</p>
+					<img class="image-post" src="../images/ScarletGirlKrita.png">
+					<br class="alphatext sub">Blending is the process of mixing differents colours in order to archieve a more omogeneus and balanced artwork, I use it dozens of time on Krita</br>
+					<br class="alphatext sub">First we need to load our dataset, I've done this by uploading a CSV file containing the URL path of all the images that I want to classify together with the features. The best thing is that we can customize how we want the features to be based on the artwork. (Es: we can determinate a scale of Greyscale that ranges from 0 to 1, 0 meaning total Black and 1 total White) </br>
+					
+			<pre><code>
+		imageClassifier.csv
+		Image_ID,Color_R,Color_G,Color_B,ColourDogde_UP1,ColourDogde_UP2,ColourDogde_UP3,ColourDogde_UP4,Hue,Saturation, composition_Level....
+		elevation.jpg,0.23,0.45,0.12,0.56,0.72,0.41,0.33,0.29,0.75, 0.34....
+		image2.jpg,0.56,0.32,0.78,0.44,0.38,0.89,0.65,0.21,0.54, 0.42....
+		image3.jpg,0.11,0.67,0.34,0.61,0.49,0.73,0.77,0.43,0.48, 0.23....
+		image4.jpg,0.88,0.54,0.27,0.39,0.21,0.60,0.53,0.62,0.35, 0.4....
+	</code></pre>
+	<br class="alphatext sub">We train then asimple Clustering model on Google Colab:</br>
+<pre><code>
+	from sklearn.cluster import AgglomerativeClustering
+	from scipy.cluster.hierarchy import dendrogram, linkage
+	import matplotlib.pyplot as plt
+	import pandas as pd
+	#Importing the image dataset
+	df = pd.read_csv('imageClassifier.csv')
+	Z = linkage(features_list, method='ward')
+
+	# Dendogram
+	plt.figure(figsize=(10, 7))
+	dendrogram(Z)
+	plt.show()
+
+	# Hierarchical Clustering
+	cluster = AgglomerativeClustering(n_clusters=5, affinity='euclidean', linkage='ward')
+	cluster_labels = cluster.fit_predict(features_list)
+	</code></pre>
+	<br class="alphatext sub">Example Output:</br>
+	<p class="alphatext sub2">The Speedpainting(elevation.jpg) was very bright compared to other images of the same dataset. Its scale of Colour Dogde was of 0.82, very high compared to other(That had less than 0.60) </p>
+	
+	<img class="image-post" src="../images/Elevation.jpg">
+					<div style="margin:300px;"></div>	
+					<div class="alphatext publish">Published:14 September 2024</div>
+				</div>
+				</div>
+				<div class="returnall">
+					<a href="https://dementdavid.github.io/DavidLinWang.github.io/blog.html" class="button">Return to all articles</a>
+				</div>
+			</aside>
+		<footer>
+				<p>David Lin Wang &copy All the rights reserved 2023</p>
+				<p id="update">Webpage version:1.0</p>
+				<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"></a>
+				<br>The works are licensed under a</br>
+				<div class="cc">
+				<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><strong>Creative Commons Attribution 4.0 International License</strong></a>.
+				</div>
+				<br style="text-align:center";>More on:</br>
+				<div class="social">
+					<a href="https://www.instagram.com/dement__david/">
+						<div>
+							<img src="../images/Insta icon.jpg" height="70vw" width="70vw" target="blank" alt="Instaicon.jpeg" title="Instagram">
+						</div>
+					</a>
+					<a href="https://www.deviantart.com/dementdavid/">
+						<div>
+							<img src="../images/deviantart icon.jpg" height="70vw" width="70vw" target="blank" alt="deviantarticon.jpeg" title="Deviant art">
+						</div>
+					</a>
+				</div>
+			</footer>
+			<script src="../hamburger menu.js"></script>
+			<script src="../update.js"></script>
+		</body>
+</html>
