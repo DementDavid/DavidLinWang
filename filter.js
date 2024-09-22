@@ -18,63 +18,67 @@ document.addEventListener("DOMContentLoaded", function () {
 
     startArticleIndex = (currentPage - 1) * maxArticlesPerPage;
     const endArticleIndex = startArticleIndex + maxArticlesPerPage;
+
     // Refresh table
     recentArticlesContainer.innerHTML = '';
 
     filteredArticles.slice(startArticleIndex, endArticleIndex).forEach(article => {
       const articleDiv = document.createElement('div');
       articleDiv.className = 'recent-article';
-	  
-	   const articleCard = document.createElement('div');
-      articleCard.className = 'article-card';
-	  articleDiv.appendChild(articleCard);
-	  
 
-      const articleImage = document.createElement('img')
+      const articleCard = document.createElement('div');
+      articleCard.className = 'article-card';
+      articleDiv.appendChild(articleCard);
+
+      // Create and append the image
+      const articleImage = document.createElement('img');
       articleImage.className = 'image';
       articleImage.src = article.imageURL;
-      a.appendChild(articleImage);
+      articleCard.appendChild(articleImage); // Now appending correctly after creating the anchor tag
 
+      // Create and append the anchor tag
       const a = document.createElement('a');
       a.href = article.link;
       a.textContent = article.title;
       articleCard.appendChild(a);
 
-
+      // Append the text section
       const articleText = document.createElement('div');
       articleText.className = 'article-text';
-      a.appendChild(articleText);
+      a.appendChild(articleText); // This seems to be a mistake in the structure, should be appended to `articleCard` instead of `a`
+      articleCard.appendChild(articleText);
 
+      // Append the date
       const articleDate = document.createElement('p');
       articleDate.className = 'date';
       articleDate.textContent = article.date;
-      a.appendChild(articleDate);
+      articleCard.appendChild(articleDate);
 
       recentArticlesContainer.appendChild(articleDiv);
 
-      // Verificator
+      // Grid view check
       const isGridView = dualModeContainer.classList.contains('grid-mode');
       if (!isGridView) {
         articleDiv.removeChild(articleImage);
-      }
-      else{
-	const styleSheet = document.getElementById('extrastyle').sheet;
-        /*styleSheet.insertRule('.recent-article { height: 24vw; }', styleSheet.cssRules.length);*/
+      } else {
+        const styleSheet = document.getElementById('extrastyle')?.sheet;
+        // Optional: styleSheet logic commented out
       }
     });
   }
+
   // Function to set up pagination
   function setupPagination(totalArticles) {
-    const paginationContainer = document.getElementById('pagination'); 
+    const paginationContainer = document.getElementById('pagination');
     paginationContainer.innerHTML = ''; 
 
     const totalPages = Math.ceil(totalArticles / maxArticlesPerPage);
-    
+
     for (let i = 1; i <= totalPages; i++) {
       const pageButton = document.createElement('button');
       pageButton.textContent = i;
-      
-      pageButton.addEventListener('click', function() {
+
+      pageButton.addEventListener('click', function () {
         currentPage = i;
         displayArticles();
       });
@@ -82,7 +86,8 @@ document.addEventListener("DOMContentLoaded", function () {
       paginationContainer.appendChild(pageButton);
     }
   }
-  // Hearer of events
+
+  // Event listeners
   categoryFilter.addEventListener('change', displayArticles);
 
   gridViewLink.addEventListener("click", function (event) {
@@ -102,7 +107,6 @@ document.addEventListener("DOMContentLoaded", function () {
     gridViewLink.classList.remove('hightlight');
     displayArticles();
   });
-	
 
   // Fetch articles data
   fetch('php2.json')
@@ -111,8 +115,9 @@ document.addEventListener("DOMContentLoaded", function () {
       articles = data;
       console.log(articles);
       displayArticles();
+      setupPagination(articles.length); // Setup pagination once data is fetched
     })
     .catch(error => {
-      console.error('Error :', error);
+      console.error('Error:', error);
     });
 });
