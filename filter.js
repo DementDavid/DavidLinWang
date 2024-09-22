@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	  
 	   const articleCard = document.createElement('div');
       articleCard.className = 'article-card';
-	  articleDiv.appendChild(articleCard)
+	  articleDiv.appendChild(articleCard);
 	  
 
       const articleImage = document.createElement('img')
