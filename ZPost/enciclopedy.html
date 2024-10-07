@@ -1,12 +1,4 @@
-.topnav a.active{
-	color:white;
-}.topnav a.active{
-	color:white;
-}.topnav a.active{
-	color:white;
-}.topnav a.active{
-	color:white;
-}<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
@@ -14,139 +6,156 @@
 		<meta name="keywords" content="art, digitalart, illustrations">
 		<meta name="author" content="David Lin Wang">
 		<meta name="description" content="Welcome to my page.">
-		<link rel="icon" type="image/png" href="Shui he Tian.png">
+		<link rel="icon" type="image/png" href="Img/The summoning.jpg">
 		<link rel="stylesheet" href="artist1.css">
+		<link rel="stylesheet" href="../garden.css">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	</head>
 	<title>Enciclopedy</title>
-	<style>
-		main{
-		font-family:roboto;
-		background-color:white;
-		margin:20px;
-		border-radius:10px;
-		min-height:1200px;
-		}
-		.topnav a.active{
-		background-color:white;
-		}
-		.sidebar-header {
-		height: 70px; 
-		background:linear-gradient(to right, #b3f0ff, #0099cc 30%, #f7bff7 80%);
-		width:100%;
-		}
-		.article-list:empty + .sidebar {
-		display: none;
-		}
-		@media(max-width:768px){
-		.blogbox{
-		background-color: white;
-    		min-height: 100vw;
-    		border: 1px solid teal;
-    		border-radius: 3px;
-    		box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-    		margin-top: 49px;
-    		margin-bottom: 63px;
-		}
-		}
-		@media(min-width:768px){
-		.blogbox{
-		background-color: white;
-    		min-height: 100vw;
-    		border: 1px solid teal;
-    		border-radius: 3px;
-    		box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-    		margin-top: 49px;
-    		margin-bottom: 63px;
-		margin:30px;
-		}
-		}
+	  <style>
+        * {box-sizing: border-box; margin: 0; padding: 0; font-family: Arial, sans-serif;}
+        body {background-color:#081001; color: #333;}
 		
-		
-	</style>
-	<script src="footer.js"></script>
-	<header>
-		<h1 class="Zpresentation">DAVID LIN WANG</h1>
-		<div class="socialtop">
-					<a href="https://www.instagram.com/dement__david/">
-						<div>
-							<img src="images/Insta icon.jpg" height="70vw" width="70vw" target="blank" alt=Instaicon.jpeg">
-						</div>
-					</a>
-					<a href="https://www.deviantart.com/dementdavid/">
-						<div>
-							<img src="images/deviantart icon.jpg" height="70vw" width="70vw" target="blank" alt=deviantarticon.jpeg">
-						</div>
-					</a>
-				</div>
-		<!--Top banner-->
-		<div class="mobile-menu-button presentation">
-		<span></span>
-		<span></span>
-		<span></span>
-		</div>
-		 <nav class="Ztopnav content desktop-menu">
-            <a href="https://dementdavid.github.io/DavidLinWang.github.io/index.html">&larr;Main Website</a>
-            <a class="active" href="enciclopedy.html">Biology</a>
-            <a href="Zpost/philosophy.html">Philosophy<span class="locked">&#128274;</span></a>
-            <a href="Zpost/WebDevelopment.html">Web development<span class="locked">&#128274;</span></a>
-            <a href="Zpost/ArtificialIntelligence.html">Artificial Intelligence<span class="locked">&#128274;</span></a>
-        </nav>
+        .container {width: 80%; margin: 0 auto; padding: 20px;}
+        header {background-color: #216f31; padding: 20px; color: white; text-align: center;}
+        nav ul {list-style: none; padding: 0;}
+        nav ul li {display: inline; margin-right: 15px;}
+        nav ul li a {color: white; text-decoration: none;}
+        #hero {background: url('hero-image.jpg') no-repeat center center/cover; color: white; text-align: center; padding: 100px 0;}
+        .cta-button {background-color: #ffe858; color: black; padding: 10px 20px; text-decoration: none; border-radius: 5px; margin-top: 20px; display: inline-block;}
+        .cta-button:hover {background-color: #C0392B;}
+        #concepts {background-color: #ECF0F1; padding: 40px 0; text-align: center;}
+        .concepts-grid {display: flex; justify-content: space-around; flex-wrap: wrap;}
+        .concept-item {background-color: white; padding: 20px; width: 30%; margin: 15px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); border-radius: 8px;}
+        .concept-item h3 {color: #2980B9;}
+        .learn-more {text-decoration: none; color: #E74C3C; font-weight: bold;}
+        .learn-more:hover {text-decoration: underline;}
+        #about, #contact {padding: 40px 0;}
+        footer {background-color: #2C3E50; color: white; text-align: center; padding: 10px 0;}
+        .concept-item {transition: transform 0.3s ease;}
+        .concept-item:hover {transform: scale(1.05);}
+        @media (max-width: 768px) {.concepts-grid {flex-direction: column; align-items: center;} .concept-item {width: 80%;}}
+		#filter {
+    margin-bottom: 20px;
+    text-align: center;
+}
 
+#filter label {
+    margin-right: 10px;
+    font-weight: bold;
+}
 
-    <!-- Menu mobile (Hidden by deffault) -->
-    <nav id="mobile-menu" class="mobile-menu">
-        <a href="https://dementdavid.github.io/DavidLinWang.github.io/index.html">&larr;Main Websit</a>
-        <a class="active" href="https://dementdavid.github.io/DavidLinWang.github.io/enciclopedy.html">Biology</a>
-        <a "Zpost/philosophy.html">Philosophy<span class="locked">&#128274;</span></a>
-        <a href="Zpost/WebDevelopment.html">Web development<span class="locked">&#128274;</span></a>
-        <a href="Zpost/ArtificialIntelligence.html">Artificial Intelligence<span class="locked">&#128274;</span></a>
-    </nav>
-	</header>
-		<body>
-		<aside>
-			<div class="blogbox">
-				<div>
-					<h2>Welcome to the Enciclopedy Hub, the area of the garden dedicated to cultivate knowlegde:)</h2>
-				</div>
-				<article class="contents">
-					<div class="sidebar-header">
-						<h3 style="font-size:50px">Articles</h2>
-					</div>
-					<div class="recent-articles2">
-    					</div>
-				</article>
-			</div>
-		</aside>
-		<button class="nextButton">Next</button>
-		<button class="prevButton">Previous</button>
-		<span>Actual page: <span id="currentPage"></span></span>
-			<footer class="Zfooter">
-				<p>David Lin Wang &copy All the rights reserved 2023</p>
-				<p id="update">Webpage version:1.0</p>
-				<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"></a>
-				<br>The works are licensed under a</br>
-				<div class="cc">
-				<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><strong>Creative Commons Attribution 4.0 International License</strong></a>.
-				</div>
-				<br style="text-align:"center";>More on:</br>
-				<div class="social">
-					<a href="https://www.instagram.com/dement__david/">
-						<div>
-							<img src="images/Insta icon.jpg" height="70vw" width="70vw" target="blank" alt=Instaicon.jpeg">
-						</div>
-					</a>
-					<a href="https://www.deviantart.com/dementdavid/">
-						<div>
-							<img src="images/deviantart icon.jpg" height="70vw" width="70vw" target="blank" alt=deviantarticon.jpeg">
-						</div>
-          </a>
-				</div>
-			</footer>
-			<!--<script src="lastposts2.php"></script>-->
+#filter select {
+    padding: 5px;
+    font-size: 16px;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Welcome to the Garden!</h1>
+            <nav>
+                <ul>
+                    <li><a href="#concepts">Return to main Website</a></li>
+                    <li><a href="#about">Articles</a></li>
+                    <li><a href="#contact">Resources</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+	<section id="concepts">
+    <div class="container">
+        <h2>Principal Concepts</h2>
+        
+        <!-- Filter Form -->
+        <div id="filter">
+            <label for="filterCategory">Filtrer par catégorie:</label>
+            <select id="filterCategory">
+                <option value="all">Toutes</option>
+                <option value="programming">Programmation</option>
+                <option value="biology">Biology</option>
+                <option value="science">Sciences</option>
+            </select>
+        </div>
+
+        <div class="concepts-grid">
+            <div class="concept-item" data-category="programming">
+                <h3>Programmation</h3>
+                <p>To come soon</p>
+                <a href="math.html" class="learn-more">Learn more</a>
+            </div>
+            <div class="concept-item" data-category="biology">
+                <h3>Biologie</h3>
+                <p>To come soon</p>
+                <a href="programming.html" class="learn-more">Learn more</a>
+            </div>
+            <div class="concept-item" data-category="science">
+                <h3>Sciences</h3>
+                <p>To come soon</p>
+                <a href="science.html" class="learn-more">Learn more</a>
+            </div>
+        </div>
+    </div>
+</section>
+    <section id="hero">
+        <div class="container">
+            <h2>Explore</h2>
+            <p>Discover differents domaines</p>
+            <a href="#concepts" class="cta-button">Start Now</a>
+        </div>
+    </section>
+
+    <section id="concepts">
+        <div class="container">
+            <h2>Principal Concepts</h2>
+            <div class="concepts-grid">
+                <div class="concept-item">
+                    <h3>Programmation</h3>
+                    <p>Coming soon.</p>
+                    <a href="math.html" class="learn-more">En savoir plus</a>
+                </div>
+                <div class="concept-item">
+                    <h3>Biology</h3>
+                    <p>Coming soon.</p>
+                    <a href="programming.html" class="learn-more">En savoir plus</a>
+                </div>
+                <div class="concept-item">
+                    <h3>Scineces</h3>
+                    <p>Coming soon.</p>
+                    <a href="science.html" class="learn-more">En savoir plus</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>About</h2>
+            <p>...</p>
+        </div>
+    </section>
 			<script src="filter.js"></script>
 			<script src="pagination.js"></script>
 			<script src="hamburger menu.js"></script>
 			<script src="update.js"></script>
+			<script>
+
+    document.getElementById('filterCategory').addEventListener('change', function () {
+        var selectedCategory = this.value; 
+        var items = document.querySelectorAll('.concept-item'); 
+
+
+        items.forEach(function (item) {
+            var category = item.getAttribute('data-category'); 
+
+            if (selectedCategory === 'all' || selectedCategory === category) {
+                item.style.display = 'block';
+            } else {
+                item.style.display = 'none';
+            }
+        });
+    });
+</script>
 		</body>
 </html>
