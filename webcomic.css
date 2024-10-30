@@ -1,0 +1,69 @@
+* {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background-color: #f4f4f4;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .collection {
+            background: linear-gradient(135deg, #f78f18, #feffc0);
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 40px;
+            color: white;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .collection h2 {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+
+        .collection p {
+            text-align: center;
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        .book-cards {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .book {
+            background-color: white;
+            color: #333;
+            border-radius: 10px;
+            width: 30%;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease;
+        }
+
+        .book:hover {
+            transform: translateY(-10px);
+        }
+
+        .book img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .book h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .book p {
+            font-size: 14px;
+        }
