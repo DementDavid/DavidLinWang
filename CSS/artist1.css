@@ -60,7 +60,7 @@ margin:0;
 }
 .background{
 z-index:-1;
-background-image:url('images/pagebackground3.jpg');
+background-image:url('../images/pagebackground3.jpg');
 background-size: cover;
 position: fixed; 
 top: 0;
@@ -80,6 +80,7 @@ background:linear-gradient(180deg, #24809f, #2aadd9 30%, #86e2e3 80%);
 text-align: center;
 padding: 20px;
 font-size:1.5rem;
+font-family: Arial, sans-serif;
 }
 body.show-footer footer {
 display: block;
@@ -215,7 +216,7 @@ border-radius:10px;
 	  left: 10px;
 	  width: 80px;
 	  height: 80px;
-	  background-image: url('images/AqBackground.jpg'); 
+	  background-image: url('../images/AqBackground.jpg'); 
 	  background-size: cover;
 	  background-position: center;
 	  background-repeat: no-repeat;
@@ -263,7 +264,7 @@ margin-right:200px;
 margin-top:60px;
 border-radius:3px;
 font-size:50px;
-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+box-shadow: -2px 0px 10px 5px rgba(0, 0, 0, 0.5);
 font-size:30px;
 padding:30px;
 position:relative;
@@ -329,6 +330,29 @@ font-size:50px;
 .mobile-menu a:active{
 color:white;
 }
+.bubble-container {
+    display: flex;             /* Arrange bubbles horizontally */
+    gap: 20px;                 /* Add space between each bubble */
+    justify-content: center;   /* Center align the bubbles */
+    padding: 10px;
+}
+
+.bubble {
+    display: inline-block;
+    padding: 15px 25px;
+    background-color: #f0f0f0; /* Background color for the bubble */
+    border-radius: 50px;       /* Rounded edges to create a bubble effect */
+    text-decoration: none;     /* Remove underline */
+    color: #71dbf1;               /* Text color */
+    font-size: 1.2em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for depth */
+    transition: transform 0.3s ease; /* Animation effect on hover */
+}
+
+.bubble:hover {
+    background-color: #e0e0e0; /* Slightly darker color on hover */
+    transform: scale(1.05);    /* Grow slightly on hover */
+}
 @media (max-width: 768px) {
 .topnav {
 	height:12vw;
@@ -375,7 +399,7 @@ height:20vw
 background-color:white;
 border:1px solid teal;
 border-radius:3px;
-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+box-shadow: -2px 0px 10px 5px rgba(0, 0, 0, 0.5);
 margin-top: 49px;
 margin-bottom: 63px;
 font-size:20px;
@@ -392,6 +416,7 @@ margin:0;
 .recent-article::before {
 content: '';
 position: absolute;
+
 bottom: -100%;
 left: 0;
 width: 100%;

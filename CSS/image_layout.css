@@ -16,11 +16,35 @@ height: 30vw;
  align-items: center;
  margin-top: 0;
 }
+.container-double{
+display:flex;
+padding: 20px;
+         background-color: #f4f4f4;
+         border: 1px solid #ddd;
+}
 .article-top-image-img{
  height: 41vw;
  width: 100%;
  object-fit: cover;
 
+}
+button {
+ display: flex;
+ align-items: center;
+ gap: 8px; /* Space between icon and text */
+ padding: 8px 12px;
+ border: none;
+ background-color: #e0e0e0;
+ cursor: pointer;
+ font-size: 1em;
+}
+
+button svg {
+ fill: #333; /* Icon color */
+}
+
+button:hover {
+ background-color: #d0d0d0;
 }
 @media(min-width: 769px){
 .pyramid {
