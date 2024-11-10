@@ -109,10 +109,22 @@ transform: scale(1.3);
 }
 @media (max-width: 768px) {
 .book h3 {
-    font-size: 4px;
+    font-size: 25px;
 }
 .book img {
     height: 60px;
     width: 40px !important;
+}
+.book-cards {
+display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
+}
+.book{
+    width: 50%;
+}
+.book img {
+height: 175px;
+width: 131px !important;
 }
 }
