@@ -21,7 +21,7 @@
 .story-section {
     margin-bottom: 50px;
     padding: 20px;
-    background-color: #fff;
+    background-color: #91cdff;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: flex;             
@@ -37,13 +37,12 @@ box-shadow:9px 5px 20px rgb(15 36 66);
     padding: 62px;
 }
 .story-section-main-big{
-background: linear-gradient(100deg, #d3a8ff, #f9e7ff, #a4f4f5 80%);
+background: radial-gradient(circle, rgb(239 163 255 / 80%) 0%,  rgb(111 225 233 / 30%) 80%);
 margin: 10px;
 border-radius: 20px;
 height: 450px;
 box-shadow:9px 5px 20px rgb(15 36 66);
 animation: magicGlowBlue 3s infinite alternate;
-border: 1px double #031a53;
 
 }
 .story-section h2 {
@@ -91,7 +90,41 @@ border: 1px double #031a53;
     box-shadow: 0 0 10px #ffaf40, 0 0 30px #ffcc00;
     animation: magicGlow 3s infinite alternate;
 }
+.filter-container {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+			Justify-content:center;
+			padding:20px;
+			font-size:50px;
+			
+        }
+.filter-bubble {
+            padding: 10px 15px;
+            background-color: #c1e6ff;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
 
+        /* Hover effect for bubbles */
+        .filter-bubble:hover {
+            transform:scale(1.05);
+        }
+
+        /* Active bubble styling */
+        .filter-bubble.active {
+            background-color: #007bff;
+            color: white;
+        }
+
+        /* Styling for story sections */
+        .story-section {
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
 .magic-button:hover {
     background: linear-gradient(45deg, #ffaf40, #ffcc00);
     transform: translateY(-5px);
@@ -132,7 +165,7 @@ border: 1px double #031a53;
 /* Story sections with smooth scroll */
 .story-section {
     padding: 100px 20px;
-    background-color: #011841;
+    background-color: #91cdff;
     opacity: 0.9;
 }
 

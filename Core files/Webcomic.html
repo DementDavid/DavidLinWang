@@ -7,9 +7,9 @@
 		<meta name="keywords" content="art, digitalart, illustrations">
 		<meta name="author" content="David Lin Wang">
 		<meta name="description" content="Welcome to my page.">
-		<link rel="icon" type="image/png" href="Shui he Tian.png">
-		<link rel="stylesheet" href="artist1.css">
-		<link rel="stylesheet" href="webcomic.css">
+		<link rel="icon" type="image/png" href="../images/Shui he Tian.png">
+		<link rel="stylesheet" href="../CSS/artist1.css">
+		<link rel="stylesheet" href="../CSS/webcomic.css">
 		<link rel="stylesheet" href="last-illustrations.css">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	</head>
@@ -57,6 +57,7 @@
 		border-bottom: 3px solid #f39681;
 		width: 100%;
 }
+
 		.title-container{
 		    align-items: center;
     right: 0;
@@ -91,6 +92,7 @@
             border-radius: 10px;
 			height:100%;
 			width:100%;
+			z-index:1;
         }
 		.webcomic-title{
 		text-align:center;
@@ -153,7 +155,6 @@
         }
 
         body {
-            font-family: Arial, sans-serif;
             background-color: #e6f7ff; /* Light blue theme */
             color: #333;
         }
@@ -288,12 +289,12 @@
 		<div class="socialtop">
 					<a href="https://www.instagram.com/dement__david/">
 						<div>
-							<img src="images/Insta icon.jpg" height="70vw" width="70vw" target="blank" alt="Instaicon.jpeg">
+							<img src="../images/Insta icon.jpg" height="70vw" width="70vw" target="blank" alt="Instaicon.jpeg">
 						</div>
 					</a>
 					<a href="https://www.deviantart.com/dementdavid/">
 						<div>
-							<img src="images/deviantart icon.jpg" height="70vw" width="70vw" target="blank" alt="deviantarticon.jpeg">
+							<img src="../images/deviantart icon.jpg" height="70vw" width="70vw" target="blank" alt="deviantarticon.jpeg">
 						</div>
 					</a>
 				</div>
@@ -303,22 +304,22 @@
 		<span></span>
 		<span></span>
 		</div>
-		 <nav class="topnav content desktop-menu">
-            <a href="index.html">Home</a>
-            <a href="Illustrations.html">Illustrations</a>
-            <a href="blog.html">Blog</a>
-            <a class="active" href="Webcomic.html">Webcomic</a>
-            <a href="About.html">About</a>
+		  <nav class="topnav content desktop-menu">
+            <a class="bubble" class="active" href="../index.html">Home</a>
+            <a class="bubble" href="Illustrations.html">Illustrations</a>
+            <a class="bubble" href="blog.html">Blog</a>
+            <a class="bubble" href="Webcomic.html">Tales</a>
+            <a class="bubble" href="About.html">About</a>
         </nav>
 
 
     <!-- Menu mobile (Hidden by deffault) -->
     <nav id="mobile-menu" class="mobile-menu">
-        <a href="index.html">Home</a>
-        <a href="Illustrations.html">Illustrations</a>
-        <a href="blog.html">Blog</a>
-        <a class="active" href="Webcomic.html">Webcomic</a>
-        <a href="About.html">About</a>
+        <a href="../index.html">Home</a>
+        <a href="../Illustrations.html">Illustrations</a>
+        <a href="../blog.html">Blog</a>
+        <a class="active" href="../Webcomic.html">Webcomic</a>
+        <a href="../About.html">About</a>
     </nav>
 		<!--Principal text of the home page-->
 		
@@ -330,23 +331,25 @@
 		
 	
 
-   
+    <!-- Primera colección -->
 	<div class="story-section-main-overlay"></div>
 	<div class="story-section-main story-section-webcomic">
 	 <h1>Tales</h1>
-  
-    <div class="collection">
-        <h2></h2>
+    <!-- Primera colección -->
+    <div class="collection-dual-essences">
+        <h2>DUAL ESSENCES</h2>
         <p>.</p>
         <div class="book-cards">
             <div class="book">
-                <a href="Aqtales.html">
-                    <img src="images/AQportrait2.jpg" alt="Libro 1">
-                    <h3>.</h3>
-                    <p>.</p>
+                <a href="../Tales/Aqtales.html">
+				<img class="aquasculpture-frame" src="../AQ-img/AQspecialborder3.png" alt="Libro 1">
+                    <img src="../AQ-img/AQportrait2.jpg" alt="Libro 1">
+                    <h3>Aquasculpture</h3>
+                    <p>Aqua and Sand embarks themselves in a epic adventure to surpass a Tournamment</p>
                 </a>
             </div>
-            <div class="book">
+            
+			<div class="book">
                 <img src="https://via.placeholder.com/150x200" alt="Libro 2">
                 <h3>La Última Fortaleza</h3>
                 <p>Defiende la última fortaleza contra las fuerzas oscuras.</p>
@@ -356,16 +359,25 @@
                 <h3>Las Arenas del Tiempo</h3>
                 <p>Viaja a través del tiempo y salva el mundo.</p>
             </div>
+			<div class="book">
+                <img src="https://via.placeholder.com/150x200" alt="Libro 3">
+                <h3>Las Arenas del Tiempo</h3>
+                <p>Viaja a través del tiempo y salva el mundo.</p>
+            </div>
         </div>
     </div>
 
- 
-    <div class="collection">
-        <h2>Colección Misterio Oscuro</h2>
+    <div class="collection-dual-essences-seasons">
+        <h2>DUAL ESSENCES SEASONS</h2>
         <p>Desentraña los secretos más profundos y oscuros.</p>
         <div class="book-cards">
+		<div class="book">
+                <img src="https://via.placeholder.com/150x200" alt="Libro 2">
+                <h3>AQUASCULPTURE-ETERNAL WINTER</h3>
+                <p>Defiende la última fortaleza contra las fuerzas oscuras.</p>
+            </div>
             <div class="book">
-            
+				<img src="https://via.placeholder.com/150x200" alt="Libro 2">
                 <h3>El Enigma Perdido</h3>
                 <p>Descubre la verdad oculta en un antiguo enigma.</p>
             </div>
@@ -379,18 +391,19 @@
                 <h3>El Laberinto de Cristal</h3>
                 <p>Encuentra la salida antes de que sea demasiado tarde.</p>
             </div>
+			
         </div>
     </div>
 
-
-    <div class="collection">
-        <h2>Colección Ciencia Ficción Futurista</h2>
-        <p>Viaja a futuros distantes y explora lo desconocido.</p>
+    <!-- Tercera colección -->
+    <div class="collection-lost-nature">
+        <h2>LOST NATURE</h2>
+        <p>A Girl abandoned by civilization, pursuing the glimpse of Nature</p>
         <div class="book-cards">
             <div class="book">
                 <img src="https://via.placeholder.com/150x200" alt="Libro 1">
-                <h3>Horizontes Lejanos</h3>
-                <p>Un viaje intergaláctico en busca de nuevos mundos.</p>
+                <h3>THE HARDEST HARVEST</h3>
+                <p>While preparing the After-Spooky Festival, she wouldn't imagine that it would be so tiring to do...Harvest.</p>
             </div>
             <div class="book">
                 <img src="https://via.placeholder.com/150x200" alt="Libro 2">
@@ -428,13 +441,15 @@
 						</div>
 					</a>
 					<div>
-							<a href="enciclopedy.html">ENCICLOPEDY</a>
+							<a href="enciclopedy.html" style="font-size:4px">ENCICLOPEDY</a>
 					</div>
 				</div>
 				 
 			</footer>
-			<script src="hamburger menu.js"></script>
-			<script src="update.js"></script>
-			<script src="enciclopedyportal.js"></script>
+			<script src="../JS/hamburger menu.js"></script>
+			<script src="../JS/update.js"></script>
+			<script src="../JS/enciclopedyportal.js"></script>
 		
 </html>
+	
+		

@@ -1,7 +1,10 @@
+@import "language.css";
 :root{
 --font-size-big: 27px;
 --font-size-small: 18px;
 --font-color: 18px;
+--height-image-post-cellphone-viewport:45vw;
+--font-size-title: 50px;
 }
 .pos-font{
 	    color: #002e4d;
@@ -11,3 +14,30 @@
 .sub2{
 font-size: var(--font-size-small);
 }
+pre {
+background-color: #f4f4f4;
+            border: 1px solid #ddd;
+            padding: 10px;
+            overflow: auto;
+			    height:300px;
+			width: 80%;
+        }
+        code {
+            color: #002e5f;
+            font-family: 'Courier New', Courier, monospace;
+			font-size:18px;
+        }
+		.image-post{
+		    height: 32vw;
+    		object-fit: cover;
+		}
+		.post-title-font{
+		font-size:var(--font-size-title);
+		text-align: center;
+		}	
+		@media (max-width:769px){
+		.image-post{
+		    height: var(--height-image-post-cellphone-viewport);
+    		object-fit: cover;
+		}
+		}
